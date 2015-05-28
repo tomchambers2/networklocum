@@ -1,0 +1,80 @@
+body {
+	background-color: white;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+}
+
+.row {
+	margin-bottom: 40px;
+}
+
+.intro-row {
+	background: linear-gradient(#F8FE83, white);
+	width: 100%;
+	padding-bottom: 30px;
+}
+
+.top-bar-section ul li.active > a {
+	background-color: #F8FE85;
+	color: black;
+}
+
+.top-bar-section ul li.active > a:hover {
+	background-color: #F8F8FE;
+	color: black;
+}
+
+h2 {
+	margin-top: 50px;
+}
+
+h3 {
+	margin-top: 1em;
+}
+
+.button {
+	background-color: #515092;
+}
+
+.button:hover {
+	background-color: #a3a3a3;
+}
+
+.divider {
+	border-top: 1px solid gray;
+}
+
+.what-we-do {
+	margin-top: 20px;
+	display: block;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.three {
+	margin-bottom: 0px;
+}
+
+.step-fixed {
+	height: 100px;
+}
+
+.step-image {
+	height: 160px;
+}
+
+.button-text {
+	color:gray;
+	font-size: 0.96em;
+}
+
+.step-number {
+	line-height: 100%;
+	font-size: 60px;
+	text-align: right;
+	padding-right: 0px;
+}
+
+.step {
+	text-align: left;
+	padding-left: 17px;
+}

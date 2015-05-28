@@ -1,0 +1,4295 @@
+/*-------------------------------------------------------
+
+Custom styles for specific pages.
+
+Selectors in this file should be page specific and should affect elements
+visible only on one or two pages.
+
+-------------------------------------------------------*/
+.application-confirm .summary {
+	background: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	padding:10px 20px 20px 20px;
+	text-align: left;
+}
+.application-confirm .summary ul {
+	margin-left: 0;
+}
+.application-confirm .summary h5 {
+	text-transform: uppercase;
+}
+@media (min-width: 768px) {
+	.application-confirm .summary {
+		margin-left: 20px;
+		margin-right: 20px
+	}
+}
+.not-eligible img.small-timer {
+	margin-top:20px;
+}
+.not-eligible h1 {
+	font-weight: 300;
+	color: #3E75A9;
+}
+.not-eligible .not-eligible-summary h5 {
+	font-weight: bold;
+}
+.not-eligible .not-eligible-summary {
+	text-align: left;
+	font-size: 12px;
+	padding: 10px 20px 20px;
+	margin-bottom:10px;
+	margin-top:20px;
+	border: 1px solid #ddd;
+	background: #ffffff;
+}
+.not-eligible p.form-holder-text {
+	text-align: center;
+	color: #BFC1C5;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+.add-user-as-pm .panel-body {
+	margin-bottom: 10px;
+}
+
+/*-------------------------------------------------------
+
+Logged in all job page
+
+-------------------------------------------------------*/
+.logged-in-all-jobs .xs-responsive-table .week-heading,
+.jobs-at-previous-practices .xs-responsive-table .week-heading {
+	padding-left: 8px;
+	background-color: #3e75a8;
+	color: white;
+	line-height: 2em;
+	margin-bottom: 0;
+}
+.logged-in-all-jobs .xs-responsive-table h4,
+.jobs-at-previous-practices .xs-responsive-table h4 {
+	padding-left: 8px;
+	background-color: #3e75a8;
+	color: white;
+	line-height: 2em;
+	margin-bottom: 0;
+}
+
+.logged-in-all-jobs .xs-responsive-table .week-heading:first-child,
+.jobs-at-previous-practices .xs-responsive-table .week-heading:first-child {
+	margin-top: 0;
+}
+
+@media (min-width: 768px) {
+	.logged-in-all-jobs .apply-btn .btn {
+		float: right;
+	}
+	.logged-in-all-jobs td:first-child {
+		width: 35%;
+	}
+	.logged-in-all-jobs td:nth-child(2) {
+		width: 30%;
+	}
+	.logged-in-all-jobs td:nth-child(3) {
+		width: 15%;
+	}
+	.logged-in-all-jobs td:nth-child(4) {
+		width: 15%;
+	}
+
+	.job-results-list td:first-child {
+		width: 35%;
+	}
+	.job-results-list td:nth-child(2) {
+		width: 30%;
+	}
+	.job-results-list td:nth-child(3) {
+		width: 25%
+	}
+	.job-results-list thead th:nth-child(3) {
+		padding-left: 58px;
+	}
+
+	.jobs-at-previous-practices td:first-child {
+		width: 30%;
+	}
+	.jobs-at-previous-practices td:nth-child(2) {
+		width: 30%;
+	}
+	.jobs-at-previous-practices td:nth-child(3) {
+		width: 15%;
+	}
+	.jobs-at-previous-practices td:nth-child(4) {
+		width: 15%
+	}
+}
+
+/*-------------------------------------------------------
+
+Job advert page
+
+-------------------------------------------------------*/
+.job-advert h4 {
+	font-weight: 300;
+	color: #3E75A9;
+}
+.job-advert .grey-box {
+	background-color: #EEEEE8;
+	padding: 15px;
+}
+.job-advert .main .grey-box {
+	margin-right: 15px;
+}
+.job-advert .side h4,
+.job-advert .side .grey-box {
+	margin-left: 15px;
+}
+.job-advert .grey-box ul {
+	margin: 0 0 10px 25px;
+}
+
+.job-advert .summary {
+	font-size: 1.2em;
+}
+.job-advert .summary .wide-icon [class^="icon-"],
+.job-advert .summary .wide-icon [class*=" icon-"] {
+	width: 25px;
+	display: inline-block;
+}
+
+/* An alternative to this is adding col-xs-12 to the button and setting
+ * float:inherit here
+ */
+.job-advert .main .continue-btn .btn {
+	width: 100%;
+}
+
+.job-advert .contentWrapper {
+	margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+	.job-advert .main .grey-box,
+	.job-advert .side .grey-box,
+	.job-advert .main h4,
+	.job-advert .side h4 {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	.job-advert .main h4,
+	.job-advert .side h4 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.job-advert .contentWrapper {
+		padding-top: 15px;
+	}
+}
+
+/*----------------------------------------
+
+FIX BANNER SUMMARY ONLY FOR MOBILE
+
+-----------------------------------------*/
+
+@media (max-width: 767px) {
+	#advertHeaderMobile{
+		position: fixed;
+		width: 100%;
+		height: 55px;
+		left: 0;
+		top: 50px;
+		background-color: #fff;
+		z-index: 1029;
+		box-shadow: 0px 5px 5px #888888;
+		border-bottom: solid;
+		border-color: #DDDDDD;
+		border-width: thin;
+	}
+
+	#advertHeaderMobile h4{
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border-bottom: solid;
+		border-color: #DDDDDD;
+		border-width: thin;
+		background-color: #F5F5F5;
+		color:  #808080;
+	}
+	#advertHeaderMobile .nav{
+		margin:auto;
+		width: 290px;
+		padding: 0;
+		text-align: center;
+	}
+	#advertHeaderMobile .box{
+		height: 55px;
+		float: left;
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+		padding-top: 2px;
+	}
+	#advertHeaderMobile .box1{
+		width: 100px;
+		color: black;
+		padding-top: 18px;
+	}
+	#advertHeaderMobile .box1:hover, #advertHeaderMobile .box1:visited, #advertHeaderMobile  .box1:active {
+		text-decoration: none;
+	}
+	#advertHeaderMobile .box2{
+		width: 80px;
+		background-color: #3E75A8;
+	}
+	#advertHeaderMobile .box2 .id{
+		font-weight: 200;
+		font-size: 18px;
+		color: #ffffff;
+	}
+	#advertHeaderMobile .status{
+		font-size: 12px;
+		color: #ffffff;
+	}
+	#advertHeaderMobile .box3{
+		width: 100px;
+	}
+	#advertHeaderMobile .title{
+		font-size: 12px;
+	}
+	#advertHeaderMobile .box3 .value{
+		color: #009700;
+		font-weight: 300;
+		font-size: 20px;
+		width: 100%;
+		float: left;
+	}
+	#advertHeaderMobile .box3 .under {
+		font-weight: 300;
+		font-size: 12px;
+	}
+}
+
+
+/*-------------------------------------------------------
+
+Job apply page
+
+-------------------------------------------------------*/
+
+
+.job-application .list-group-item.has-error,
+.job-application .gp_use_nl_agreement.has-error {
+	background-color: #f2dede;
+}
+
+.job-application .panel-body ul {
+	margin: 0 0 10px 0;
+}
+
+.job-application .job_value {
+	color: #009700;
+}
+
+.job-application .hourly-rate .control-label {
+	text-align: left;
+}
+
+.job-application .you-will-earn  .control-label {
+	text-align: left;
+}
+
+.job-application .you-will-earn p {
+	margin-top: 5px;
+}
+
+/*-------------------------------------------------------
+
+Locum job search page (Find a Job)
+
+-------------------------------------------------------*/
+.job-results-list-filters .xs-responsive-table h4 {
+	padding-left: 8px;
+	background-color: #3e75a8;
+	color: white;
+	line-height: 2em;
+	margin-bottom: 0;
+}
+
+.job-results-list-filters .xs-responsive-table h4:first-child {
+	margin-top: 0;
+}
+
+@media (max-width: 767px) {
+	.job-results-list-filters .hourly-rate
+	.job-results-list .hourly-rate {
+		font-size: 20px;
+		line-height: 20px;
+		height: 37px;
+	}
+}
+@media (min-width: 768px) {
+	.job-results-list-filters .hourly-rate,
+	.job-results-list .hourly-rate {
+		font-size: 23px;
+	}
+	.job-results-list-filters .topup,
+	.job-results-list .topup {
+		margin-top: 5px;
+	}
+}
+
+.job-results-list table {
+	/* bootstrap adds a margin to the table*/
+	margin-bottom: 0;
+}
+
+.job-results-list-filters .hourly-rate,
+.job-results-list .hourly-rate {
+	color: #009700;
+	vertical-align: middle !important;
+	font-weight: bold;
+}
+
+.job-results-list-filters .topup-spacer,
+.job-results-list .topup-spacer {
+	width: 40px;
+	display: inline-block;
+	height: 5px;
+	margin-right: 4px;
+}
+
+.job-results-list .search-job-form {
+	margin: 10px auto;
+}
+
+.job-results-list .search-job-form label {
+	/* bootstrap makes labels bold by default*/
+}
+
+.job-results-list-filters .form-group.day.selected {
+	border-left: #3276b1 5px solid;
+}
+
+.job-results-list-filters .form-group.day.selected label {
+	color: #3276b1;
+	font-weight: bold;
+}
+
+.job-results-list-filters .form-group.day.disabled {
+	border-left: #b3b3b3 5px solid;
+	color: #b3b3b3;
+}
+
+.job-results-list-filters .form-group.day.not-selected {
+	border-left: #666666 5px solid;
+}
+
+.job-results-list-filters .form-group.day {
+	padding-left: 8px;
+	background-color: #E6E6E6;
+	margin-bottom: 1px;
+}
+
+.job-results-list-filters .form-group.day label {
+	line-height: 32px;
+	height: 30px;
+	width: 100%;
+	font-size: 10pt;
+	font-weight: normal;
+}
+
+.job-results-list-filters .form-group.day.last {
+	margin-bottom: 10px;
+}
+
+.job-results-list-filters .form-group.day input {
+	margin-top: 10px;
+}
+
+.job-results-list-filters .form-group.day label span {
+	margin-right: 10px;
+}
+
+.job-results-list-filters .form-group.day.selected label span {
+	color: #3276b1;
+	font-weight: bold;
+}
+
+.job-results-list-filters form hr {
+	color: #CCCCCC;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.job-results-list-filters .form-label {
+	margin-top: 55px;
+}
+
+.job-results-list-filters .panel-body .alert.alert-warning {
+	min-height: 85px;
+}
+
+.job-results-list-filters h4 {
+	background-color: #cdcccc;
+}
+
+.job-results-list-filters .practice-pct {
+	font-weight: bold;
+}
+
+.job-results-list-filters .explain-topup {
+	margin-left: 0;
+	margin-bottom: 20px;
+}
+
+.job-results-list-filters .results-filters-separator {
+	border: 1px solid #ccc;
+}
+
+.job-results-list-filters table {
+	margin-bottom: 0;
+}
+
+.job-results-list-filters .xs-responsive-table .week-heading {
+	padding-left: 8px;
+	background-color: #3e75a8;
+	color: white;
+	line-height: 2em;
+	margin-bottom: 0;
+}
+
+.job-results-list-filters .xs-responsive-table .week-heading:first-child {
+	margin-top: 0;
+}
+
+@media (min-width: 768px) {
+	.job-results-list-filters .row-container {
+		padding-right: 25px;
+	}
+	.job-results-list-filters td:first-child {
+		width: 45%;
+	}
+	.job-results-list-filters td:nth-child(2) {
+		width: 20%;
+	}
+	.job-results-list-filters td:nth-child(3) {
+		width: 25%
+	}
+	.job-results-list-filters thead th:nth-child(3) {
+		padding-left: 58px;
+	}
+	.job-results-list-filters .per-hour {
+		top: 5px;
+		position: relative;
+	}
+}
+
+.job-results-list-filters .nl-btn-slim {
+	line-height: 14px;
+	font-size: 14px;
+	padding: 5px;
+	background-color: #cca711;
+	border-radius: 0;
+	margin-left: 30px;
+}
+/*-------------------------------------------------------
+
+Salaried jobs / jobs abroad
+
+-------------------------------------------------------*/
+
+@media (max-width: 767px) {
+	.jobs-abroad .main-content {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+@media (min-width: 768px) {
+	.jobs-abroad .main-content {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.jobs-abroad .apply-btn {
+	width: 100%;
+}
+
+.jobs-abroad .continue-btn {
+	margin-bottom: 20px;
+}
+
+
+
+
+/*-------------------------------------------------------
+
+Your Account page
+
+-------------------------------------------------------*/
+.your-account-locum .account-section {
+	margin-top: 20px;
+}
+
+.your-account-locum .content-wrapper {
+	margin-bottom: 20px;
+}
+
+.your-account-locum .outerContainer {
+	background: #f0f0f0;
+	border-radius: 4px;
+	padding: 2px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.your-account-locum h5 {
+	margin: 0;
+	padding: 13px 16px 16px 16px;
+}
+.your-account-locum .outerContainer .content {
+	background: #fff;
+	border-radius: 4px;
+	overflow: hidden;
+	padding: 16px;
+}
+
+.your-account-locum .external_service_access_status {
+	font-size: larger;
+	color: #454545;
+	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+
+	.your-account-locum .outerContainer {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+
+/*-------------------------------------------------------
+
+Account details page
+
+-------------------------------------------------------*/
+.account-details .input-section {
+	background: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	margin-top: 10px;
+	padding: 20px 20px 0px 20px;
+}
+.account-details label {
+	font-weight: normal;
+}
+
+.account-details .control-label.required {
+	font-weight: bold;
+}
+
+.account-details .availibility-checkboxes label {
+	display: inline-block;
+	margin-right: 15px;
+	padding-top: 5px;
+}
+
+.account-details .availibility-checkboxes input {
+	margin-top: -2px;
+	width: 16px;
+	height: 16px;
+}
+
+.account-details .min-rate input[type=text] {
+	width: 3em;
+	display: inline-block;
+}
+
+.account-details .sort-code input[type=text] {
+	width: 3em;
+	float: left;
+}
+
+.account-details .sort-code .dash {
+	width: 1.2em;
+	float: left;
+	/* Same as .form-control */
+	display: block;
+	height: 34px;
+	padding: 6px 6px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	text-align: center;
+}
+
+.account-details .sort-code .help-block {
+	float: left;
+	width: 100%;
+}
+
+.account-details .account-number input[type=text] {
+	width: 6.5em;
+}
+
+@media (max-width: 767px) {
+	.account-details .continue-btn .btn {
+		width: 100%;
+	}
+}
+@media (min-width: 992px)  {
+	.account-details .form-control {
+		width: 50%;
+	}
+}
+/*---------------------------------------------------------
+
+Simplified Job application discussion page
+
+----------------------------------------------------------*/
+.rate-discussion .blue-text {
+	color: #3276b1;
+}
+
+.rate-discussion .discussion-content .green-text {
+	color: green;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.rate-discussion .left-pane {
+	background-color: #E6E6E6;
+	padding: 10px;
+	margin-left: 15px;
+}
+
+.rate-discussion .right-pane {
+	margin-right: 15px;
+	margin-left: -15px;
+}
+
+.rate-discussion .left-pane hr {
+	width: 50%;
+	margin-left: 25%;
+	border-top: 1px solid #FFFFFF;
+}
+
+.rate-discussion h5 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0
+}
+.rate-discussion h5.subject {
+	border-bottom: 1px solid #999999;
+}
+.rate-discussion h5.from {
+	border-bottom: 1px solid #999999;
+	float: left;
+	width: 100%;
+	line-height: 30px;
+}
+.rate-discussion h5.from .img-circle {
+	height: 30px;
+	margin-right: 5px;
+	float: left;
+}
+.rate-discussion h5.from .date {
+	font-size: 85%;
+	float: right;
+	color: #999;
+}
+
+.rate-discussion form {
+	float: left;
+	width: 100%;
+}
+
+.rate-discussion .icon-info-sign {
+	margin: 0 auto;
+	color: #FFFFFF;
+	font-size: 6em;
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+
+.rate-discussion .discussion-content {
+	background-color: #E6E6E6;
+	padding: 15px 15px 15px 40px;
+	border-bottom: 1px solid darkgray;
+}
+
+.rate-discussion .discussion-content .chosen-days {
+	margin: 5px 20px 5px 40px;
+	width: 90%
+}
+
+.rate-discussion .discussion-content li {
+	margin-left: 40px;
+}
+
+.rate-discussion .discussion-content label {
+	font-weight: normal;
+}
+
+.rate-discussion .discussion-content input.form-control {
+	width: 70px;
+	display: inline;
+}
+
+.rate-discussion .send-button {
+	width: 33%;
+	margin: 10px 0;
+}
+
+.rate-discussion .discussion-content .radios {
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+
+.rate-discussion .cancel-button {
+	font-weight: bolder;
+	font-size: 1.1em;
+}
+
+@media (max-width: 767px) {
+	.rate-discussion .left-pane {
+		margin-left: 0px;
+	}
+	.rate-discussion .right-pane {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.rate-discussion h5 {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.rate-discussion .icon-info-sign {
+		font-size: 3em;
+	}
+}
+
+@media (max-width: 991px) {
+	.rate-discussion .discussion-content {
+		padding: 15px;
+	}
+}
+
+/*-------------------------------------------------------
+
+Rate discussion thanks
+
+-------------------------------------------------------*/
+.rate-discussion-thanks h2 [class^="icon-"],
+.rate-discussion-thanks h2 [class*=" icon-"] {
+	font-size: 85%;
+}
+
+/*-------------------------------------------------------
+
+Simple job profile
+
+-------------------------------------------------------*/
+
+.job-profile-simple .side.pull-right {
+	padding-left: 0px;
+}
+
+.job-profile-simple .main .content-section {
+	border-bottom: 1px solid #eee;
+	margin-top: 20px;
+	padding: 0 0 20px 15px;
+}
+
+.job-profile-simple .side .content-section {
+	margin-top: 20px;
+	padding: 15px 15px 0 15px;
+}
+
+/* Fix sidebar to RHS of panel */
+.job-profile-simple .side.affix {
+	top: 51px;
+	padding-right: 0px;
+}
+.job-profile-simple .side.affix-top,
+.job-profile-simple .side.affix-bottom {
+	/* Remove the JS added "right" property when the viewport is at the top
+	of the page */
+	right: 0 !important;
+}
+
+.job-profile-simple .fast-payment,
+.job-profile-simple .fast-payment .badge {
+	cursor: default;
+}
+
+.job-profile-simple .fast-payment .badge {
+	background-color: #EAC117;
+}
+
+@media (max-width: 767px) {
+	/* Don't affix the sidebar on mobile */
+	.side.affix {
+		position: static;
+	}
+}
+@media (min-width: 768px) {
+	/* When the sidebar is fixed it is no longer part of it's parent container,
+	 * so the BS3 fluid widths are incorrect.
+	 * http://stackoverflow.com/a/18966454/691427
+	 */
+	.job-profile-simple .side.affix {
+		width: 236px;
+	}
+}
+@media (min-width: 992px) {
+	/* When the sidebar is fixed it is no longer part of it's parent container,
+	 * so the BS3 fluid widths are incorrect.
+	 * http://stackoverflow.com/a/18966454/691427
+	 */
+	.job-profile-simple .side.affix {
+		width: 227px;
+	}
+}
+@media (min-width: 1200px) {
+	/* When the sidebar is fixed it is no longer part of it's parent container,
+	 * so the BS3 fluid widths are incorrect.
+	 * http://stackoverflow.com/a/18966454/691427
+	 */
+	.job-profile-simple .side.affix {
+		width: 277px;
+	}
+}
+
+
+.job-profile-simple .black-text{
+	color: #333;
+}
+
+.job-profile-simple blockquote {
+	font-size: 14px;
+	border-left: 5px solid #EFEFEF;
+}
+.job-profile-simple blockquote p {
+	margin-left: 25px;
+}
+.job-profile-simple blockquote footer {
+	margin-left: 25px;
+	margin-bottom: 10px;
+}
+
+.job-profile-simple h3 {
+	font-weight: 300;
+	color: #3E75A9;
+}
+
+.job-profile-simple .date-time,
+.job-profile-simple .it-systems .title {
+	color: #3E75A9;
+}
+
+.job-profile-simple .date-time p {
+	margin-bottom: 0px;
+}
+
+.job-profile-simple .day-month-year {
+	font-size: 2em;
+	font-weight: 100;
+}
+
+.job-profile-simple .ccg-name {
+	font-size: 1.2em;
+	font-weight: 100;
+}
+
+.job-profile-simple .day-month {
+	font-weight: bold;
+}
+
+.job-profile-simple .time {
+	margin-left: 20px;
+}
+
+.job-profile-simple .extra-sessions {
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	margin-left: 15px;
+	line-height: 2em;
+}
+
+.job-profile-simple .extra-sessions .icon-chevron-down {
+	font-weight: bold;
+}
+
+.job-profile-simple .side .content-section.apply-section {
+	background-color: #009F00;
+	color: white;
+	margin-top: 0px;
+	padding: 0;
+}
+/* Taken from http://stackoverflow.com/a/13777800/691427 */
+.job-profile-simple .apply-section:after {
+	content: " ";
+	display: block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 12px;
+	background: linear-gradient(#009F00 0%, transparent 0%), linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF linear-gradient(45deg, #FFFFFF 33.33%, #009F00 33.33%) 0 0%;
+	background: -webkit-linear-gradient(#009F00 0%, transparent 0%), -webkit-linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF -webkit-linear-gradient(45deg, #FFFFFF 33.33%, #009F00 33.33%) 0 0%;
+	background: -o-linear-gradient(#009F00 0%, transparent 0%), -o-linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF -o-linear-gradient(45deg, #FFFFFF 33.33%, #009F00 33.33%) 0 0%;
+	background: -moz-linear-gradient(#009F00 0%, transparent 0%), -moz-linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF -moz-linear-gradient(45deg, #FFFFFF 33.33%, #009F00 33.33%) 0 0%;
+	background-repeat: repeat-x;
+	background-size: 0px 100%, 20px 15px, 20px 15px;
+}
+
+.job-profile-simple .side .content-section.apply-section.job-not-posted{
+	background-color: #B3B3B3;
+}
+.job-profile-simple .apply-section.job-not-posted:after {
+	background: linear-gradient(#B3B3B3 0%, transparent 0%), linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF linear-gradient(45deg, #FFFFFF 33.33%, #B3B3B3 33.33%) 0 0%;
+	background: -webkit-linear-gradient(#B3B3B3 0%, transparent 0%), -webkit-linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF -webkit-linear-gradient(45deg, #FFFFFF 33.33%, #B3B3B3 33.33%) 0 0%;
+	background: -o-linear-gradient(#B3B3B3 0%, transparent 0%), -o-linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF -o-linear-gradient(45deg, #FFFFFF 33.33%, #B3B3B3 33.33%) 0 0%;
+	background: -moz-linear-gradient(#B3B3B3 0%, transparent 0%), -moz-linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF -moz-linear-gradient(45deg, #FFFFFF 33.33%, #B3B3B3 33.33%) 0 0%;
+	background-repeat: repeat-x;
+	background-size: 0px 100%, 20px 15px, 20px 15px;
+}
+.job-profile-simple .side .content-section.apply-section.rejected{
+	background-color: #FFAF23;
+}
+.job-profile-simple .apply-section.rejected:after {
+	background: linear-gradient(#FFAF23 0%, transparent 0%), linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF linear-gradient(45deg, #FFFFFF 33.33%, #FFAF23 33.33%) 0 0%;
+	background: -webkit-linear-gradient(#FFAF23 0%, transparent 0%), -webkit-linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF -webkit-linear-gradient(45deg, #FFFFFF 33.33%, #FFAF23 33.33%) 0 0%;
+	background: -o-linear-gradient(#FFAF23 0%, transparent 0%), -o-linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF -o-linear-gradient(45deg, #FFFFFF 33.33%, #FFAF23 33.33%) 0 0%;
+	background: -moz-linear-gradient(#FFAF23 0%, transparent 0%), -moz-linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF -moz-linear-gradient(45deg, #FFFFFF 33.33%, #FFAF23 33.33%) 0 0%;
+	background-repeat: repeat-x;
+	background-size: 0px 100%, 20px 15px, 20px 15px;
+}
+.job-profile-simple .side .content-section.apply-section.outstanding{
+	background-color: #2373AA;
+}
+.job-profile-simple .apply-section.outstanding:after {
+	background: linear-gradient(#2373AA 0%, transparent 0%), linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF linear-gradient(45deg, #FFFFFF 33.33%, #2373AA 33.33%) 0 0%;
+	background: -webkit-linear-gradient(#2373AA 0%, transparent 0%), -webkit-linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF -webkit-linear-gradient(45deg, #FFFFFF 33.33%, #2373AA 33.33%) 0 0%;
+	background: -o-linear-gradient(#2373AA 0%, transparent 0%), -o-linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF -o-linear-gradient(45deg, #FFFFFF 33.33%, #2373AA 33.33%) 0 0%;
+	background: -moz-linear-gradient(#2373AA 0%, transparent 0%), -moz-linear-gradient(135deg, #FFFFFF 33.33%, transparent 33.33%) 0 0%, #FFFFFF -moz-linear-gradient(45deg, #FFFFFF 33.33%, #2373AA 33.33%) 0 0%;
+	background-repeat: repeat-x;
+	background-size: 0px 100%, 20px 15px, 20px 15px;
+}
+
+.job-profile-simple .apply-section .inner {
+	padding: 15px;
+}
+
+.job-profile-simple .apply-section .summary {
+	text-align: center;
+	font-weight: 300;
+}
+.job-profile-simple .apply-section .summary .white-text {
+	font-size: 3em;
+	color: white;
+}
+.job-profile-simple .top_up {
+	font-weight: bolder;
+}
+
+.job-profile-simple .apply-section .negotiate {
+	text-align: center;
+	font-weight: 300;
+	line-height: 2.1em;
+}
+.job-profile-simple .negotiate a {
+	font-weight: bolder;
+	color: black;
+	text-decoration: underline;
+}
+
+.job-profile-simple .explanation-text {
+	border: 1px solid #3B83B4;
+	color: #3B83B4;
+	padding: 7px;
+}
+
+.job-profile-simple .explanation-text .icon-exclamation-sign {
+	position: relative;
+	margin-left: 47%;
+	top: -20px;
+	background-color: white;
+}
+
+.job-profile-simple .explanation-text p {
+	margin-top: -10px;
+}
+
+.job-profile-simple .apply-section .btn,
+.job-profile-simple .ask-section .btn {
+	width: 100%
+}
+
+.job-profile-simple .btn-apply {
+	margin-top: 10px;
+}
+
+.job-profile-simple .ask-section .icon-comments {
+	vertical-align: middle;
+	color: white;
+	background-color: #808080;
+	font-size: 1.5em;
+	padding: 6px;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+
+.job-profile-simple .ask-section p {
+	margin-top: 10px;
+}
+
+.job-profile-simple .ask-section .speak-button {
+	float: left;
+	width: 100%;
+}
+.job-profile-simple .ask-section .icon-comments {
+	float: left;
+	width: 35px;
+}
+
+.job-profile-simple .distance-title {
+	float: right;
+	color: #ACACAC;
+	font-size: 85%;
+}
+
+.job-profile-simple .nearby-point {
+	height: 40px;
+	line-height: 40px;
+	background-color: #EEEEEE;
+	margin-bottom: 5px;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+.job-profile-simple .nearby-point [class^="icon-"],
+.job-profile-simple .nearby-point [class*=" icon-"] {
+	font-size: 2em;
+	color: white;
+	margin: 5px 10px 5px;
+	float: left;
+}
+
+.job-profile-simple .box-a {
+	float: left;
+	background-color: #E0DCDC;
+}
+.job-profile-simple .box-b {
+	float: right;
+	padding-right: 5px;
+	color: #3B83B4;
+}
+.job-profile-simple .closest {
+	width: 85%;
+}
+.job-profile-simple .closer {
+	width: 80%;
+}
+.job-profile-simple .nearby {
+	width: 75%;
+}
+.job-profile-simple .further {
+	width: 70%;
+}
+.job-profile-simple .furthest {
+	width: 65%;
+}
+
+.job-profile-simple .pm-travel-info {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.job-profile-simple .other-sessions thead{
+	background-color: #EEEEEE;
+}
+
+.job-profile-simple .other-sessions thead th{
+	font-weight: normal;
+}
+
+.job-profile-simple .apply-section form label span.error-message {
+	font-weight: bold;
+}
+
+.job-profile-simple .apply-section form label span.normal-message {
+	color: #ffffff;
+}
+
+@media (max-width: 767px) {
+	.job-profile-simple .apply-section {
+		padding-left: 15px;
+	}
+	.job-profile-simple .apply-section .inner,
+	.job-profile-simple .explanation-section,
+	.job-profile-simple .ask-section {
+		padding-left: 30px;
+	}
+	.job-profile-simple .main .content-section {
+		padding: 0 15px 20px 15px;
+	}
+	.job-profile-simple .side .content-section {
+		padding: 0 15px 20px 30px;
+	}
+	.job-profile-simple .main {
+		border-top: 1px solid #eee;
+	}
+
+	.job-profile-simple .time {
+		margin-left: 0px;
+	}
+	.job-profile-simple blockquote p {
+		margin-left: 0px;
+	}
+
+
+	#advertHeaderMobile .box3 .top_up.under {
+		color: #009700;
+		font-weight: bolder;
+	}
+
+	.job-profile-simple .apply-section:before {
+		content: " ";
+		display: block;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 12px;
+		background: linear-gradient(#FFFFFF 0%, transparent 0%), linear-gradient(135deg, #009F00 33.33%, transparent 33.33%) 0 0%, #009F00 linear-gradient(45deg, #009F00 33.33%, #FFFFFF 33.33%) 0 0%;
+		background: -webkit-linear-gradient(#FFFFFF 0%, transparent 0%), -webkit-linear-gradient(135deg, #009F00 33.33%, transparent 33.33%) 0 0%, #009F00 -webkit-linear-gradient(45deg, #009F00 33.33%, #FFFFFF 33.33%) 0 0%;
+		background: -o-linear-gradient(#FFFFFF 0%, transparent 0%), -o-linear-gradient(135deg, #009F00 33.33%, transparent 33.33%) 0 0%, #009F00 -o-linear-gradient(45deg, #009F00 33.33%, #FFFFFF 33.33%) 0 0%;
+		background: -moz-linear-gradient(#FFFFFF 0%, transparent 0%), -moz-linear-gradient(135deg, #009F00 33.33%, transparent 33.33%) 0 0%, #009F00 -moz-linear-gradient(45deg, #009F00 33.33%, #FFFFFF 33.33%) 0 0%;
+		background-repeat: repeat-x;
+		background-size: 0px 100%, 20px 15px, 20px 15px;
+	}
+
+	.job-profile-simple .apply-section.job-not-posted:before {
+		background: linear-gradient(#FFFFFF 0%, transparent 0%), linear-gradient(135deg, #B3B3B3 33.33%, transparent 33.33%) 0 0%, #B3B3B3 linear-gradient(45deg, #B3B3B3 33.33%, #FFFFFF 33.33%) 0 0%;
+		background: -webkit-linear-gradient(#FFFFFF 0%, transparent 0%), -webkit-linear-gradient(135deg, #B3B3B3 33.33%, transparent 33.33%) 0 0%, #B3B3B3 -webkit-linear-gradient(45deg, #B3B3B3 33.33%, #FFFFFF 33.33%) 0 0%;
+		background: -o-linear-gradient(#FFFFFF 0%, transparent 0%), -o-linear-gradient(135deg, #B3B3B3 33.33%, transparent 33.33%) 0 0%, #B3B3B3 -o-linear-gradient(45deg, #B3B3B3 33.33%, #FFFFFF 33.33%) 0 0%;
+		background: -moz-linear-gradient(#FFFFFF 0%, transparent 0%), -moz-linear-gradient(135deg, #B3B3B3 33.33%, transparent 33.33%) 0 0%, #B3B3B3 -moz-linear-gradient(45deg, #B3B3B3 33.33%, #FFFFFF 33.33%) 0 0%;
+		background-repeat: repeat-x;
+		background-size: 0px 100%, 20px 15px, 20px 15px;
+	}
+
+	.job-profile-simple .apply-section.outstanding:before {
+		background: linear-gradient(#FFFFFF 0%, transparent 0%), linear-gradient(135deg, #2373AA 33.33%, transparent 33.33%) 0 0%, #2373AA linear-gradient(45deg, #2373AA 33.33%, #FFFFFF 33.33%) 0 0%;
+		background: -webkit-linear-gradient(#FFFFFF 0%, transparent 0%), -webkit-linear-gradient(135deg, #2373AA 33.33%, transparent 33.33%) 0 0%, #2373AA -webkit-linear-gradient(45deg, #2373AA 33.33%, #FFFFFF 33.33%) 0 0%;
+		background: -o-linear-gradient(#FFFFFF 0%, transparent 0%), -o-linear-gradient(135deg, #2373AA 33.33%, transparent 33.33%) 0 0%, #2373AA -o-linear-gradient(45deg, #2373AA 33.33%, #FFFFFF 33.33%) 0 0%;
+		background: -moz-linear-gradient(#FFFFFF 0%, transparent 0%), -moz-linear-gradient(135deg, #2373AA 33.33%, transparent 33.33%) 0 0%, #2373AA -moz-linear-gradient(45deg, #2373AA 33.33%, #FFFFFF 33.33%) 0 0%;
+		background-repeat: repeat-x;
+		background-size: 0px 100%, 20px 15px, 20px 15px;
+	}
+
+
+	.job-profile-simple .apply-section.rejected:before {
+		background: linear-gradient(#FFFFFF 0%, transparent 0%), linear-gradient(135deg, #FFAF23 33.33%, transparent 33.33%) 0 0%, #FFAF23 linear-gradient(45deg, #FFAF23 33.33%, #FFFFFF 33.33%) 0 0%;
+		background: -webkit-linear-gradient(#FFFFFF 0%, transparent 0%), -webkit-linear-gradient(135deg, #FFAF23 33.33%, transparent 33.33%) 0 0%, #FFAF23 -webkit-linear-gradient(45deg, #FFAF23 33.33%, #FFFFFF 33.33%) 0 0%;
+		background: -o-linear-gradient(#FFFFFF 0%, transparent 0%), -o-linear-gradient(135deg, #FFAF23 33.33%, transparent 33.33%) 0 0%, #FFAF23 -o-linear-gradient(45deg, #FFAF23 33.33%, #FFFFFF 33.33%) 0 0%;
+		background: -moz-linear-gradient(#FFFFFF 0%, transparent 0%), -moz-linear-gradient(135deg, #FFAF23 33.33%, transparent 33.33%) 0 0%, #FFAF23 -moz-linear-gradient(45deg, #FFAF23 33.33%, #FFFFFF 33.33%) 0 0%;
+		background-repeat: repeat-x;
+		background-size: 0px 100%, 20px 15px, 20px 15px;
+	}
+	.job-profile-simple blockquote {
+		margin-left: -15px;
+		border-left: 7px solid #D3D3D3;
+		padding: 0 20px 0 8px;
+	}
+
+	.job-profile-simple .distance-title.driving {
+		margin-top: 20px;
+	}
+
+	.job-profile-simple .extra-sessions.visible-xs {
+		border-top: 1px solid #eee;
+	}
+	.job-profile-simple .extra-sessions {
+		line-height: 3em;
+	}
+}
+/*-------------------------------------------------------
+
+Simple job profile thanks page
+
+-------------------------------------------------------*/
+.job-profile-simple-thanks h4 {
+	margin: 20px 0 20px 0;
+}
+
+.job-profile-simple-thanks .other-days {
+	padding: 0 20px 0 20px;
+	border: 2px solid #2373AA;
+	border-radius: 4px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.job-profile-simple-thanks .other-days table  {
+	margin-bottom: 0;
+}
+.job-profile-simple-thanks .other-days table thead {
+	background-color: #EEEEEE;
+}
+
+.job-profile-simple-thanks .other-days thead th {
+	font-weight: normal;
+}
+
+.job-profile-simple-thanks .other-days .apply-for-all {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.job-profile-simple-thanks .btn-success.disabled {
+	opacity: 1;
+}
+
+/* - - - - - - - - - - - - - - - - -
+
+GP Resource centre
+
+- - - - - - - - - - - - - - - - - */
+.gp_resource_centre .documentList {
+	margin: 20px 20px 0 80px;
+	width: auto;
+}
+.gp_resource_centre .document {
+	clear: both;
+	padding: 15px 0px 15px 0px;
+	background: #FCF8E3;
+	border: 1px solid #fbeed5;
+	margin: 0px;
+	margin-left: -70px;
+	margin-right: -10px;
+	width: auto;
+}
+.gp_resource_centre .document:hover {
+	background: #FEFFF4;
+	border: 1px solid #fbeed5;
+}
+.gp_resource_centre .documentDetail {
+	padding-right: 10px;
+}
+.gp_resource_centre .documentDetail h3 {
+	margin: 0;
+	float: left;
+	font-size: 16px;
+	font-weight:bold;
+	line-height: 25px;
+	width: auto;
+}
+.gp_resource_centre .documentDetail .description {
+	float: left;
+	width: 100%;
+}
+.gp_resource_centre .uploadedBy {
+	clear: left;
+	font-size: 85%;
+}
+.gp_resource_centre .downloadDocument {
+	float: right;
+	width: 50%;
+
+}
+
+.gp_resource_centre .download-btn {
+	background: #F8F8F8;
+}
+
+@media (max-width: 767px) {
+	.gp_resource_centre .documentList {
+		margin-left: 60px;
+		margin-right: 0px;
+	}
+
+	.gp_resource_centre .new_feature_banner {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.gp_resource_centre .documentDetail {
+		padding-right: 0px;
+	}
+}
+/*---------------------------------------------------------
+
+Locum message center thread page
+
+----------------------------------------------------------*/
+.messagethread-detail .right-pane {
+	float: right;
+	width: 100%;
+	word-wrap: break-word;
+}
+.messagethread-detail .blue-text {
+	color: #3276b1;
+}
+
+.messagethread-detail .left-pane {
+	background-color: #E6E6E6;
+	padding: 10px;
+	margin-left: 15px;
+}
+
+.messagethread-detail .right-pane {
+	margin-right: 15px;
+	margin-left: -15px;
+}
+
+.messagethread-detail .author-messages {
+	border-bottom: 1px solid #999999;
+	float: left;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.messagethread-detail .author-messages.me {
+	background-color: #E6E6E6;
+}
+
+.messagethread-detail .previous-message {
+	padding: 0 10px 0 10px;
+	margin: 0;
+	float: left;
+	width: 100%;
+}
+.messagethread-detail .previous-message p {
+	margin: 0;
+	line-height: 24px;
+}
+
+.messagethread-detail .previous-message .date {
+	font-size: 85%;
+	color: #999;
+}
+
+.messagethread-detail .right-pane form {
+	float: left;
+	width: 100%;
+}
+
+.messagethread-detail .left-pane  [class^="icon-"],
+.messagethread-detail .left-pane  [class*=" icon-"] {
+	margin: 0 auto;
+	color: #FFFFFF;
+	font-size: 6em;
+	text-align: center;
+	width: 100%;
+	display: block;
+}
+
+.messagethread-detail .message-content {
+	background-color: #E6E6E6;
+	padding: 15px 15px 15px 40px;
+	border-bottom: 1px solid darkgray;
+}
+
+.messagethread-detail .message-content label {
+	font-weight: normal;
+}
+
+.messagethread-detail .right-pane .alert{
+	margin: 0;
+}
+
+@media (max-width: 767px) {
+	.messagethread-detail .left-pane {
+		margin-left: 0px;
+	}
+	.messagethread-detail .right-pane {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.messagethread-detail .previous-message {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.messagethread-detail .left-pane  [class^="icon-"],
+	.messagethread-detail .left-pane  [class*=" icon-"] {
+		font-size: 3em;
+	}
+}
+
+@media (max-width: 991px) {
+	.messagethread-detail .message-content {
+		padding: 15px;
+	}
+}
+
+/*-------------------------------------------------------
+
+Message Centre
+
+-------------------------------------------------------*/
+
+.messagethread-list .table {
+	margin-bottom: 20px;
+}
+
+.messagethread-list .table i {
+	margin-right: 10px;
+}
+
+.messagethread-list .unread {
+	font-weight: bold;
+}
+
+
+/*-------------------------------------------------------
+
+Home Page
+
+-------------------------------------------------------*/
+/* -- Social --*/
+.public-homepage .social {
+	padding-top: 10px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.public-homepage .extras hr {
+	border-top-color: #3e75a8;
+	margin-bottom: 0;
+}
+
+.public-homepage .extras h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #3e75a8;
+	font-weight: 300;
+	margin: 0;
+	background: #FFF;
+	display: inline-block;
+	position: relative;
+	top: -21px;
+	padding: 0 30px;
+}
+
+/* -- Areas we cover map section --*/
+.public-homepage .areas-we-cover-section {
+	margin-top: 30px;
+	padding: 30px 0;
+	background: #f5f5f5;
+}
+.public-homepage .areas-we-cover-section h2{
+	color: #3e75a8;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.public-homepage .areas-we-cover-section p {
+	font-size: 14px;
+	color: #3e75a8;
+	line-height: 30px;
+}
+
+/* -- Testimonials -- Homepage and Testimonial page -- */
+.public-homepage .conversations {
+	margin-top: 30px;
+}
+@media (max-width: 767px) {
+	.public-homepage .areas-we-cover-section p,
+	.public-homepage .areas-we-cover-section h2 {
+		margin-left: 15px;
+	}
+	.public-homepage .featured-meta p {
+		margin-left: 15px;
+	}
+	.public-homepage .featured-meta .stats-wide {
+		margin-left: 15px;
+	}
+	.public-homepage .featured-meta {
+		margin-right: 15px;
+	}
+}
+.public-homepage .conversations blockquote::before {
+	content: '“';
+	font-size: 80px;
+	position: absolute;
+	left: 14px;
+	top: 16px;
+	line-height: 1em;
+	font-weight: bold;
+	color: #fefefe;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.public-homepage .conversations blockquote::after {
+	content: '”';
+	font-size: 80px;
+	position: absolute;
+	right: 40px;
+	bottom: -24px;
+	line-height: 1em;
+	font-weight: bold;
+	color: #fefefe;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.public-homepage .conversations blockquote {
+	border: 0;
+	padding: 0;
+	margin: 0 0 0 40px;
+}
+.public-homepage .conversations p {
+	margin: 10px 0 0 40px;
+	font-size: 12px;
+	font-weight:700;
+	font-style: italic;
+}
+
+.public-homepage .locum-testimonial {
+	border-radius: 20px;
+	padding: 30px 20px 20px 20px;
+	color: #3e75a8;
+	font-weight: 300;
+	font-size: 16px;
+	background: #daecfd;
+	position: relative;
+}
+.public-homepage .gp-testimonial {
+	border-radius: 20px;
+	padding: 30px 30px 20px 30px;
+	color: #3e75a8;
+	font-weight: 300;
+	font-size: 16px;
+	background: #e5e5e5;
+	position: relative;
+}
+.public-homepage .darkblue-testimonial {
+	background: #3e75a8;
+	border-radius: 20px;
+	padding: 30px 30px 20px 30px;
+}
+
+.public-homepage .homepage-sprite-bubble-bottom-blue {
+	position: relative;
+	left: 600px;
+	margin-bottom: 14px;
+}
+@media (max-width: 767px) {
+	.public-homepage .homepage-sprite-bubble-bottom-blue {
+		left: 400px;
+	}
+}
+
+@media (max-width: 480px) {
+	.public-homepage .homepage-sprite-bubble-bottom-blue {
+		left: 300px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1021px) {
+	.public-homepage .homepage-sprite-bubble-bottom-blue {
+		left: 420px;
+	}
+}
+
+.public-homepage .homepage-sprite-bubble-bottom-grey {
+	position: relative;
+	left: 50px;
+	margin-bottom: 14px;
+}
+.conversations i {
+	margin-bottom: 20px;
+}
+/* -- Twitter -- */
+.public-homepage .twitter-bubble {
+	background: #3e75a8;
+	border-radius: 20px;
+	padding: 30px 30px 20px 30px;
+	position: relative;
+}
+
+.public-homepage .twitter-bubble p {
+	margin: 0;
+	color: #daecfd;
+	font-weight: 300;
+	font-size: 15px;
+	font-style: italic;
+	text-align: center;
+}
+.public-homepage .twitter-bird {
+	background: url('/static/img/twitter-bird.png?9fd13b76cf23') no-repeat;
+	width: 60px;
+	height: 50px;
+	position: relative;
+	left: 172px;
+	top: 15px;
+}
+
+.public-homepage .twitters {
+	background: #3e75a8;
+	color: #FFF;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.public-homepage .twitters ul {
+	list-style: none;
+	margin: 0 0 20px 0;
+}
+
+.public-homepage .twitters a {
+	color: #daecfd;
+}
+/* -- Benefits Section -- */
+
+.public-homepage .benefits {
+	margin-top: 30px;
+	padding: 30px 0;
+	background: #f5f5f5;
+}
+
+.public-homepage .benefits h2, .benefits h3 {
+	text-align: center;
+	color: #3e75a8;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0;
+	line-height: 20px;
+}
+
+.public-homepage .benefits h2 {
+	font-size: 24px;
+}
+
+.public-homepage .benefits h3 {
+	font-size: 15px;
+}
+
+.public-homepage .benefits i {
+	float: left;
+	margin-right: 15px;
+	padding: 2px 0 2px 0px;
+}
+.public-homepage .benefits ul {
+	display: table;
+	margin: 0 auto;
+}
+.public-homepage .benefits li {
+	list-style: none;
+	margin: 15px 0 0 10px;
+	font-weight: 300;
+	vertical-align: middle;
+	color: #3e75a8;
+}
+.public-homepage .benefits .actions {
+	text-align: center;
+	margin-top: 15px;
+}
+@media (max-width: 767px) {
+	.benefits .benefits-practice {
+		padding-top: 30px;
+	}
+}
+
+/* -- Featured Sections -- */
+.public-homepage .featured-heading {
+	clear: both;
+	background: #3e75a8;
+	color: #FFF;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+.public-homepage .featured-heading h2 {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	float: left;
+}
+
+.public-homepage .featured-body li {
+	padding-top: 10px;
+	background: #f5f5f5;
+	margin-bottom: 5px;
+	overflow: hidden;
+	height:95px;
+}
+.public-homepage .featured-body i.homepage-sprite.homepage-sprite-large-location-icon {
+	float: left;
+}
+
+.public-homepage .featured-meta .stats-wide {
+	height: 30px;
+}
+
+.public-homepage .locum-leaderboard li {
+	background: #f5f5f5;
+	margin-bottom: 5px;
+	overflow: hidden;
+	height: 55px;
+}
+
+.public-homepage .locum-leaderboard img.mugshot {
+	border: 1px solid #3e75a8;
+	margin: 8px;
+}
+.public-homepage .locum-leaderboard i.homepage-sprite.homepage-sprite-blueThumb{
+	margin-right: 5px;
+	margin-top: 15px;
+}
+
+.public-homepage .locum-leaderboard h2 {
+	font-size: 40px;
+	color: #3e75a8;
+	font-weight: 300;
+	float: right;
+	margin-right: 10px;
+	margin-top: 8px;
+	line-height: 40px;
+}
+
+.public-homepage .locum-leaderboard .name {
+	font-size: 16px;
+	line-height: 20px;
+	color: #3e75a8;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+
+.public-homepage .locum-leaderboard .qualifications {
+	font-size: 11px;
+	line-height: 18px;
+}
+
+.public-homepage .locum-info h3, .job-info h3 {
+	font-size: 16px;
+	line-height: 20px;
+	color: #3e75a8;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: 7px 0 0 0;
+}
+
+.public-homepage .locum-heading span {
+	float: left;
+	font-weight: 300;
+	line-height: 20px;
+	margin: 7px 0 0 0;
+}
+
+.public-homepage .locum-heading span::before {
+	content: "|";
+	padding: 0 4px;
+}
+
+.public-homepage .job-info p {
+	margin: 0;
+}
+
+.public-homepage p.notes {
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.public-homepage .homepage-sprite-featured-locums,
+.public-homepage .homepage-sprite-latest-jobs {
+	float:left;
+	margin-right: 15px;
+	margin-left: 15px;
+	position: relative;
+	top: 10px;
+}
+
+.public-homepage .featured-meta {
+	margin-top: 20px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.public-homepage .featured-meta p {
+	font-size: 16px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.public-homepage .featured-meta a {
+	float: right;
+}
+
+.public-homepage .featured-meta .locum-name {
+	color: #3e75a8;
+}
+
+/* -- Banner -- */
+.public-homepage .main-banner {
+	margin-top: 5px;
+	background: radial-gradient(ellipse at center, #d3b2f3 0%,#b381e5 100%);
+	background-color: #d3b2f3;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3b2f3', endColorstr='#b381e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.public-homepage .main-banner h1 {
+	font-size: 55px;
+	line-height: 55px;
+	color: white;
+	font-weight: 300;
+	margin-left: 10px;
+}
+@media (max-width: 767px) {
+	.public-homepage .main-banner h1 {
+		font-size: 40px;
+	}
+}
+.public-homepage .main-banner h2 {
+	font-size: 25px;
+	color: white;
+	margin-left: 10px;
+	font-weight: 300;
+}
+.public-homepage .main-banner h1 ~ a {
+	padding: 20px 35px;
+	line-height: 25px;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-left: 10px;
+	width: 45%;
+}
+
+@media (max-width: 767px) {
+	.public-homepage .main-banner h1 ~ a {
+		width: 97%;
+		margin-left: 5px;
+	}
+	.public-homepage .main-banner .find-locums-btn {
+		margin-bottom: 25px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.public-homepage .main-banner h1 {
+		font-size: 30px;
+	}
+	.public-homepage .main-banner h2 {
+		font-size: 25px;
+	}
+}
+
+.public-homepage .homepage-sprite.homepage-sprite-ishani.pull-right {
+	clear: right;
+}
+.public-homepage .main-banner .col-md-4 p {
+	position: absolute;
+	bottom: 0;
+	right: 209px;
+}
+.public-homepage .homepage-sprite.homepage-sprite-badge-appstore-lrg.appStoreLogo {
+	float: right;
+	margin-top: 10px;
+	margin-right: 15px;
+}
+.public-homepage .homepage-logos {
+	background-color: #f5f5f5;
+	text-align: center;
+}
+.public-homepage .homepage-logos ul li {
+	margin: 30px 15px;
+}
+
+@media (max-width: 767px) {
+	.public-homepage .homepage-logos ul li {
+		margin: 0;
+	}
+}
+
+/*-------------------------------------------------------
+
+Home page sprite fixs
+
+-------------------------------------------------------*/
+
+.homepage-sprite-twitter-bubble-bottom {
+	position: relative;
+	top: -1px;
+	left: 150px;
+}
+.homepage-sprite.homepage-sprite-twitter-bird {
+	position: relative;
+	left: 100px;
+	top: 15px;
+}
+.homepage-sprite-facebook {
+	height: 73px !important;
+	margin: auto;
+}
+.homepage-sprite-linkedin {
+	height: 73px !important;
+	margin: auto;
+}
+.homepage-sprite-twitter {
+	height: 73px !important;
+	margin: auto;
+}
+.homepage-sprite-youtube {
+	height: 73px !important;
+	margin: auto;
+}
+.homepage-sprite-linkedin:hover {
+	background-position: -617px -234px;
+}
+.homepage-sprite-twitter:hover {
+	background-position: -5px -390px;
+}
+.homepage-sprite-facebook:hover {
+	background-position: -617px -78px;
+}
+.homepage-sprite-youtube:hover {
+	background-position: -88px -390px;
+}
+.homepage-sprite-homepageMap {
+	margin: auto;
+}
+/*-------------------------------------------------------
+
+Login Page
+
+-------------------------------------------------------*/
+.new-login .login-box {
+	margin-top: 30px;
+	background-color: white;
+	min-height: 20px;
+	padding: 0 19px;
+	margin-bottom: 10px;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+	float: left;
+	padding: 30px;
+}
+
+.new-login label{
+	font-weight: 500;
+	color: #969696;
+}
+.new-login .login-box h3{
+	color: #428BCA; 
+}
+
+.new-login .new-to-nl {
+	margin-top: 25px;
+}
+
+.new-login .forgotten-password {
+	margin-top: 10px;
+}
+
+.new-login .login-box-container {
+	margin-bottom: 30px;
+}
+
+.new-login .sign-line{
+	padding-bottom: 10px;
+	border-bottom: solid 1px #CCCCCC;
+}
+
+.new-login .sign-title{
+	color: #6d6d6d !important;
+	padding-left: 15px;
+}
+
+.new-login #titleSpan{
+	font-weight: bold;
+	font-size: 20px;
+	color: green;
+	margin-bottom: 30px;
+
+}
+.new-login .titleText{
+	margin-bottom: 30px;
+	margin-top: 25px;
+}
+
+@media (max-width: 767px) {
+	.new-login .col-xs-12 {
+		padding-right: 5px;
+	}
+}
+
+
+/*-------------------------------------------------------
+
+Staff pages
+
+-------------------------------------------------------*/
+.distance-search .last-login-never {
+	color:  #bbb;
+}
+.distance-search .last-login-today {
+	color:  #000;
+}
+.distance-search .last-login-last-7-days {
+	color:  #444;
+}
+.distance-search .last-login-last-30-days {
+	color:  #888;
+}
+.distance-search .last-login-more-than-30-days {
+	color:  #bbb;
+}
+
+.distance-search .results-section .table [class^="icon-"],
+.distance-search .results-section .table [class*=" icon-"] {
+	padding-right: 5px;
+}
+
+.impersonate .table,
+.user-deep-dive .table {
+	margin-bottom: 20px;
+}
+.booked-locums ul,
+.fill-job ul {
+	padding-left: 20px;
+}
+
+.fill-job .tab-content [class^="icon-"],
+.fill-job .tab-content [class*=" icon-"] {
+	padding-right: 5px;
+}
+
+.locuminvoice-list .active{
+	font-weight:bold;
+	background-color: #ffa;
+}
+
+@media (max-width: 767px) {
+	.staff-reports .btn-download {
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 768px) {
+	.staff-reports .btn-regenerate {
+		margin-top: 20px;
+	}
+	.staff-reports .btn-md-or-xs {
+		/* behave like btn-xs */
+		padding: 1px 5px;
+		font-size: 12px;
+		line-height: 1.5;
+		border-radius: 3px;
+	}
+}
+
+/*-------------------------------------------------------
+
+Public pages
+
+-------------------------------------------------------*/
+.about-us .public-content {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.about-us .thumbnail{
+	border: none;
+}
+.about-us .aboutPeopleSection ul li{
+	font-size: 0.9em;
+	padding: 10px;
+	float: left;
+	margin-bottom: 0;
+}
+.about-us .person-wrapper {
+	border-radius: 5px 5px 5px 5px;
+	background-color: #f0f0f0;
+	display: block;
+	border: 1px solid #ddd;
+	min-height: 240px;
+	padding: 10px;
+}
+.about-us .aboutPeopleSection img{
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	margin-right: 10px;
+}
+.about-us .aboutPeopleSection h3{
+	margin: 0px;
+}
+
+.about-us .qualifications {
+	font-size: 14px;
+}
+
+@media (max-width: 767px) {
+	.about-us .person-wrapper {
+		min-height: 150px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.about-us .person-wrapper {
+		min-height: 210px;
+	}
+}
+
+.affiliates-page .main-image{
+	overflow: hidden;
+}
+.affiliates-page .main-image img{
+	margin-top: 30px;
+	float: right;
+}
+@media (max-width: 767px) {
+	.affiliates-page .main-image img{
+		margin-top: 30px;
+		float: left;
+	}
+}
+
+/*-- Press page --*/
+.press-page .article-title {
+	font-size: 24px;
+}
+.press-page .pressItem{
+	clear: both;
+	padding:20px 0 20px 0;
+	border-bottom: 1px solid #f0f0f0;
+}
+.press-article p{
+	margin-top: 25px;
+}
+/*-- Pensions Page --*/
+.pension-page .main-content-row {
+	text-align: center;
+	font-size: 30px;
+	line-height: 35px;
+	margin-top: 40px;
+}
+
+.pension-page .main-content-row .btn-lg {
+	font-size: 48px;
+	line-height: 48px;
+}
+
+
+/* -- Testimonials page --*/
+
+.testimonials-page .testimonials blockquote::before {
+	content: '“';
+	font-size: 80px;
+	position: absolute;
+	left: 14px;
+	top: 16px;
+	line-height: 1em;
+	font-weight: bold;
+	color: #fefefe;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.testimonials-page .testimonials blockquote::after {
+	content: '”';
+	font-size: 80px;
+	position: absolute;
+	right: 40px;
+	bottom: -24px;
+	line-height: 1em;
+	font-weight: bold;
+	color: #fefefe;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.testimonials-page .testimonials blockquote {
+	border: 0;
+	padding: 0;
+	margin: 0 0 0 40px;
+}
+
+.testimonials-page .testimonials > .testimonial {
+	border-radius: 20px;
+	padding: 30px 20px 20px 20px;
+	color: #3e75a8;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.testimonials-page .locum-testimonial {
+	background: #daecfd;
+	position: relative;
+	border-radius: 20px;
+	padding: 30px 30px 20px 30px;
+}
+.testimonials-page .gp-testimonial {
+	background: #e5e5e5;
+	position: relative;
+	border-radius: 20px;
+	padding: 30px 30px 20px 30px;
+}
+.testimonials-page .darkblue-testimonial {
+	background: #3e75a8;
+	border-radius: 20px;
+	padding: 30px 30px 20px 30px;
+}
+
+.testimonials-page .testimonial-meta {
+	margin: 10px 0 0 40px;
+	font-size: 12px;
+	font-weight:700;
+	font-style: italic;
+}
+
+.testimonials-page .bubble-bottom {
+	width: 32px;
+	height: 22px;
+	display: block;
+	position: relative;
+	margin-bottom: 14px;
+	top: -1px; /* Gets rid off thin white line on iOS */
+}
+.testimonials-page .bubble-bottom-blue {
+	background: url('/static/img/bubble-bottom-blue.png?9fd13b76cf23') no-repeat 0 0;
+	left: 520px;
+}
+.testimonials-page .bubble-bottom-grey {
+	background: url('/static/img/bubble-bottom-grey.png?9fd13b76cf23') no-repeat 0 0;
+	left: 50px;
+}
+.testimonials-page .bubble-bottom-darkblue {
+	height: 27px;
+	width: 43px;
+	background: url('/static/img/twitter-bubble-bottom.png?9fd13b76cf23') no-repeat 0 0;
+	position: relative;
+	top: -1px; /* Gets rid off thin white line on iOS */
+	left: 210px;
+}
+
+.testimonials-page .testimonials > div {
+	padding-bottom: 50px;
+}
+.testimonials-page .locum-testimonial .testimonial-meta,
+.testimonials-page .gp-testimonial .testimonial-meta {
+	color: #3E75A8;
+}
+.testimonials > div.darkblue-testimonial {
+	color: #ffffff;
+	position: relative;
+}
+.testimonials-page .bubble-bottom-blue{
+	left:50px;
+}
+.bubble-bottom-darkblue p{
+	color: #ffffff;
+}
+.testimonials-page .testimonial-meta{
+	position: relative;
+	top:30px;
+}
+.testimonials-page p::after{
+	bottom: 5px;
+}
+
+
+/* Public all jobs page */
+.public-all-jobs .container-fluid.mainWrapper .row {
+	margin-top: 10px;
+}
+
+.public-all-jobs .xs-responsive-table .week-heading {
+	padding-left: 8px;
+	background-color: #3e75a8;
+	color: white;
+	line-height: 2em;
+	margin-bottom: 0;
+}
+
+.public-all-jobs .xs-responsive-table .week-heading:first-child {
+	margin-top: 0;
+}
+
+@media (min-width: 768px) {
+	.public-all-jobs .apply-btn .btn {
+		float: right;
+	}
+	.public-all-jobs td:first-child {
+		width: 35%;
+	}
+	.public-all-jobs td:nth-child(2) {
+		width: 30%;
+	}
+	.public-all-jobs td:nth-child(3) {
+		width: 15%;
+	}
+	.public-all-jobs td:nth-child(4) {
+		width: 15%;
+	}
+}
+
+
+/*-------------------------------------------------------
+
+Locum billing
+
+-------------------------------------------------------*/
+.locum-billing .job-container {
+	float: left;
+	width: 100%;
+}
+
+.locum-billing .details.col-xs-9 {
+	padding: 0;
+}
+
+.locum-billing .job-date {
+	color: #3F74A6;
+	display: inline-block;
+	font-weight: 300;
+	float: left;
+	line-height: 1;
+	padding: 10px 0 0 10px;
+	margin: 0 0 0 -15px;
+	border-left: 5px solid #3F74A6;
+}
+
+.locum-billing .job-date .day {
+	font-size: 85px;
+	font-weight: 500;
+	float: left;
+}
+
+.locum-billing .job-date .job-month-year {
+	float: left;
+}
+
+.locum-billing .job-date .month {
+	font-size: 35px;
+	font-weight: 500;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.locum-billing .job-date .year {
+	font-size: 25px;
+	font-weight: 100;
+	margin-top: 6px;
+}
+
+.locum-billing .status-container {
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.locum-billing .detail-container {
+	padding: 15px 0 0 0;
+}
+
+.locum-billing .status {
+	font-size: 26px;
+}
+
+.locum-billing .status_invoice_not_requested .status-container .status,
+.locum-billing .status_invoice_requested .status-container .status {
+	color: #D8A375;
+}
+
+.locum-billing .status_paid .status-container .status {
+	color: #57BB5E;
+}
+
+.locum-billing .actions ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+.locum-billing .actions ul li {
+	margin-bottom: 5px;
+}
+
+.locum-billing .status-container .status_invoice_not_requested,
+.locum-billing .status-container .status_invoice_requested,
+.locum-billing .status-container .status_paid,
+.locum-billing .actions .btn-create-invoice,
+.locum-billing .actions .btn-mark-as-paid-secondary,
+.locum-billing .actions .btn-mark-as-paid-primary,
+.locum-billing .actions .btn-send-payment-reminder,
+.locum-billing .actions .btn-contact-practice,
+.locum-billing .actions .btn-mark-as-unpaid,
+.locum-billing .actions [data-url] .icon-spinner {
+	display: none;
+}
+
+.locum-billing .status_invoice_not_requested .status-container .status_invoice_not_requested,
+.locum-billing .status_invoice_requested .status-container .status_invoice_requested,
+.locum-billing .status_paid .status-container .status_paid,
+.locum-billing .status_invoice_not_requested .actions .btn-create-invoice,
+.locum-billing .status_invoice_not_requested .actions .btn-mark-as-paid-secondary,
+.locum-billing .status_invoice_requested .actions .btn-mark-as-paid-primary,
+.locum-billing .status_invoice_requested .actions .btn-send-payment-reminder,
+.locum-billing .status_paid .actions .btn-contact-practice,
+.locum-billing .status_paid .actions .btn-mark-as-unpaid {
+	display: block;
+}
+
+.locum-billing .actions .ajax-request-sent[data-url] .icon-spinner {
+	display: inline;
+}
+
+.locum-billing .actions .ajax-error{
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	padding: 10px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.locum-billing .amount p {
+	font-size: 21px;
+	color: #57BB5E;
+	font-weight: 600;
+}
+
+.locum-billing h4 {
+	font-weight: 600;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.locum-billing p {
+	font-weight: 300;
+}
+
+.locum-billing .details ul.documents {
+	padding-left: 0;
+	list-style: none;
+}
+
+.locum-billing .details ul li.void a,
+.locum-billing .details ul li.void span {
+	text-decoration: line-through;
+}
+.locum-billing .details ul.documents li {
+	padding-left: 0;
+	list-style: none;
+	float: left;
+	width: 100%;
+}
+.locum-billing .details ul.documents a {
+	color: #333333;
+}
+.locum-billing .details .document-date {
+	color: #989898;
+}
+.locum-billing .list-inline > li{
+	padding-right: 40px;
+}
+.locum-billing .documents .document-date{
+	color: #989898;
+}
+.locum-billing .documents{
+	font-weight: 300;
+}
+.locum-billing .other-info .job-id {
+	text-decoration:none;
+	color: #333333;
+}
+.locum-billing .other-info .job-id:hover {
+	text-decoration: underline;
+}
+
+.locum-billing .no-jobs p:first-child {
+	padding: 30px 20px 30px 20px;
+}
+
+.locum-billing p.empty-message {
+	padding: 20px;
+}
+.locum-billing .listPages{
+	font-weight: 300;
+	font-size: 14px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.locum-billing .pager{
+	margin-bottom: 10px;
+}
+.locum-billing .filtering li {
+	color: #808080;
+	font-size: 20px;
+	font-weight: 200;
+
+}
+.locum-billing .filtering{
+	margin-bottom: 5px;
+}
+.locum-billing .filtering a{
+	color: #808080;
+}
+
+@media (max-width: 767px) {
+
+	.locum-billing .pager{
+		margin-top: 5px;
+	}
+	.locum-billing .panel-heading{
+		position: fixed;
+		top: 50px;
+		left: 0;
+		width: 100% !important;
+		z-index: 100;
+		text-align: center;
+	}
+	.locum-billing .fixPosition{
+		position: fixed;
+		top: 100px;
+		left: 0;
+		width: 100% !important;
+		z-index: 100;
+		background-color: white;
+		margin: 0;
+		border-bottom: solid #BBBBBB 1px;
+		box-shadow: 0px 5px 5px #BBBBBB;
+	}
+	.locum-billing .fixPositionPadding{
+		padding-left: 0;
+	}
+	.locum-billing .filtering .btn-group {
+		width: 100%;
+		margin: 10px 0 10px 0;
+		float: left;
+	}
+
+	.locum-billing .filtering .btn {
+		width: 33.3333333%;
+		color: #BBBBBB;
+		text-decoration: none;
+		white-space: normal;
+	}
+	.locum-billing .filtering .btn.active {
+		color: #777777;
+		font-weight: bold;
+	}
+	.locum-billing .filtering .badgeInvoicePos { /* INVOICE BADGE POSITION */
+		background-color: #B94A48; /*RED TO SHOW THE MOST THAT THE USER NEED TO DO SOMETHING TO GET THE PAYMENT*/
+		position: absolute;
+		left: 48%;
+		top: -9px;
+		z-index: 10;
+	}
+	.locum-billing .filtering .badgePayPos { /* PAYMENT BADGE POSITION */
+		background-color: #3F74A5; /*BLUE TO SHOW THAT THE USER CAN GIVE A INFO ABOUT THE AWAITING PAYMENT*/
+		position: absolute;
+		right: 16%;
+		top: -9px;
+		z-index: 10;
+	}
+	.locum-billing .contentStart{
+		margin-top: 125px;
+	}
+	.locum-billing .job-container {
+		margin-bottom: 20px;
+	}
+
+	.locum-billing .date-container {
+		min-height: 200px;
+	}
+
+	.locum-billing .right-hand-side {
+		padding: 0;
+	}
+
+	.locum-billing .status_invoice_not_requested .date-container,
+	.locum-billing .status_invoice_requested .date-container {
+		border-top: 4px solid #D8A375;
+	}
+
+	.locum-billing .status_paid .date-container {
+		border-top: 4px solid #57BB5E;
+	}
+
+	.locum-billing .status_invoice_not_requested .right-hand-side,
+	.locum-billing .status_invoice_requested .right-hand-side {
+		border-top: 15px solid #D8A375;
+	}
+
+	.locum-billing .status_paid .right-hand-side {
+		border-top: 15px solid #57BB5E;
+	}
+
+	.locum-billing .job-date {
+		border-left: 0;
+		text-align: center;
+	}
+
+	.locum-billing .day,
+	.locum-billing .job-month-year {
+		display: block;
+		width: 100%;
+	}
+
+	.locum-billing .status-container {
+		padding: 10px 0;
+	}
+
+	.locum-billing .status {
+		display: block;
+	}
+
+	.locum-billing .amount p {
+		line-height: 1.6;
+	}
+
+	.locum-billing .details ul.documents li {
+		margin-bottom: 10px;
+	}
+
+	.locum-billing .visible-xs.actions {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.locum-billing .filtering .container{
+		display:table;
+	}
+	.locum-billing  .filtering .table-row{  
+		display:table-row;
+	}
+	.locum-billing .filtering .col{ 
+		display:table-cell;
+	}
+	.locum-billing .invoice{
+		border-radius: 0;
+	}
+	.locum-billing .payment{
+		border-radius: 0 4px 4px 0;
+		border-left: 0;
+	}
+	.locum-billing .byList{
+		border-radius: 4px 0 0 4px;
+		border-right: 0;
+	}
+	.locum-billing .messages .alert {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.locum-billing .filtering .badge{
+		vertical-align: middle;
+		margin-bottom: 4px;
+	}
+	.locum-billing .filtering {
+		padding: 20px;
+	}
+	.locum-billing .filtering li.active a {
+		color: #3e75a7;
+		font-weight: 400;
+	}
+	.locum-billing .filtering li a:hover{
+		color: #3e75a7;
+		text-decoration: none;
+	}
+
+	.locum-billing .filtering .badge {
+		background-color: #3F74A5; /*BLUE TO SHOW THAT THE USER CAN GIVE A INFO ABOUT THE AWAITING PAYMENT*/
+
+	}
+	.locum-billing .filtering li.invoice-needed .badge {
+		background-color: #B94A48; /*RED TO SHOW THE MOST THAT THE USER NEED TO DO SOMETHING TO GET THE PAYMENT*/
+	}
+
+	.locum-billing .right-hand-side {
+		padding: 0;
+	}
+
+	/*
+	 * These next 2 rules attempt to make the date part of the job row the same
+	 * height as the right hand side.
+	 * http://stackoverflow.com/a/19378956/691427
+	 */
+	.locum-billing .job-container {
+		display: table;
+		margin-bottom: 10px;
+		border: 1px solid #B2B2B2;
+		float: left;
+	}
+
+	.locum-billing .date-container,
+	.locum-billing .right-hand-side {
+		display: table-cell;
+		float: none;
+		vertical-align: top;
+	}
+
+	/*
+	 * These next 2 rules attempt to make the action part of the detail section the
+	 * same height as the details
+	 * http://stackoverflow.com/a/19378956/691427
+	 */
+	.locum-billing .detail-container {
+		display: table;
+		width: 100%;
+	}
+
+	.locum-billing .details,
+	.locum-billing .actions {
+		display: table-cell;
+		float: none;
+		vertical-align: top;
+	}
+
+	.locum-billing .date-container {
+		position: relative;
+		overflow: hidden;
+		min-height: 200px;
+		float: left;
+		width: 100%;
+	}
+
+	.locum-billing .job-date .year {
+		float: left;
+	}
+
+	.locum-billing .other-info {
+		position: absolute;
+		bottom: 15px;
+		left: 20px;
+		padding-right: 35px;
+		padding-left: 0;
+	}
+
+	.locum-billing .status_invoice_not_requested .status-container,
+	.locum-billing .status_invoice_requested .status-container {
+		border-bottom: 5px solid #D8A375;
+	}
+
+	.locum-billing .status_paid .status-container {
+		border-bottom: 5px solid #57BB5E;
+	}
+
+	.locum-billing .status-container {
+		padding: 20px 0 0 0;
+	}
+
+	.locum-billing .status {
+		margin-top: 30px;
+	}
+
+	.locum-billing .details ul.documents a {
+		color: #333333;
+	}
+}
+
+
+/*---------------------------------------------------------
+
+Job Payment reminder
+
+----------------------------------------------------------*/
+
+.payment-reminder .message {
+	width: 90%;
+	margin: 5px 20px 5px 40px;
+}
+
+@media (max-width: 767px) {
+	.payment-reminder .send-button {
+		width: 100%;
+	}
+	.payment-reminder .cancel {
+		margin-bottom: 10px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.payment-reminder .send-button {
+		width: 50%;
+	}
+}
+
+/*-------------------------------------------------------
+
+Practice billing
+
+-------------------------------------------------------*/
+.practice-billing .job-container {
+	float: left;
+	width: 100%;
+}
+
+.practice-billing .details.col-xs-12 {
+	padding: 0;
+}
+
+.practice-billing .job-date {
+	color: #3F74A6;
+	display: inline-block;
+	font-weight: 300;
+	float: left;
+	line-height: 1;
+	padding: 10px 0 0 10px;
+	margin: 0 0 0 -15px;
+	border-left: 5px solid #3F74A6;
+}
+
+.practice-billing .job-date .day {
+	font-size: 85px;
+	font-weight: 500;
+	float: left;
+}
+
+.practice-billing .job-date .job-month-year {
+	float: left;
+}
+
+.practice-billing .job-date .month {
+	font-size: 35px;
+	font-weight: 500;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.practice-billing .job-date .year {
+	font-size: 25px;
+	font-weight: 100;
+	margin-top: 6px;
+}
+
+.practice-billing .status-container {
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+.practice-billing .detail-container {
+	padding: 15px 0 15px 0;
+}
+
+.practice-billing .status {
+	font-size: 26px;
+}
+
+.practice-billing .status_invoice_not_requested .status-container .status,
+.practice-billing .status_invoice_requested .status-container .status,
+.practice-billing .status_needs_approval .status-container .status {
+	color: #D8A375;
+}
+
+.practice-billing .status_paid .status-container .status {
+	color: #57BB5E;
+}
+
+.practice-billing .actions ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+.practice-billing .actions ul li {
+	margin-bottom: 5px;
+}
+
+.practice-billing .status-container .status_invoice_not_requested,
+.practice-billing .status-container .status_invoice_requested,
+.practice-billing .status-container .status_needs_approval,
+.practice-billing .status-container .status_paid,
+.practice-billing .session-times,
+.practice-billing .actions .btn-mark-as-paid-secondary,
+.practice-billing .actions .btn-mark-as-paid-primary,
+.practice-billing .actions .btn-mark-as-unpaid,
+.practice-billing .actions .btn-approve-hours,
+.practice-billing .actions [data-url] .icon-spinner {
+	display: none;
+}
+
+.practice-billing .status_invoice_not_requested .status-container .status_invoice_not_requested,
+.practice-billing .status_invoice_requested .status-container .status_invoice_requested,
+.practice-billing .status_needs_approval .status-container .status_needs_approval,
+.practice-billing .status_needs_approval .session-times,
+.practice-billing .status_paid .status-container .status_paid,
+.practice-billing .status_invoice_not_requested .actions .btn-mark-as-paid-secondary,
+.practice-billing .status_invoice_requested .actions .btn-mark-as-paid-primary,
+.practice-billing .status_needs_approval .actions .btn-mark-as-paid-secondary,
+.practice-billing .status_needs_approval .actions .btn-approve-hours,
+.practice-billing .status_paid .actions .btn-mark-as-unpaid {
+	display: block;
+}
+
+.practice-billing .session-times ul {
+	margin-left: 15px;
+}
+
+.practice-billing .actions .ajax-request-sent[data-url] .icon-spinner {
+	display: inline;
+}
+
+.practice-billing .actions .ajax-error{
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	padding: 10px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.practice-billing .amount p {
+	font-size: 21px;
+	color: #57BB5E;
+	font-weight: 600;
+}
+
+.practice-billing h4 {
+	font-weight: 600;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.practice-billing p {
+	font-weight: 300;
+}
+
+.practice-billing .details ul.documents {
+	padding-left: 0;
+	list-style: none;
+}
+
+.practice-billing .details ul li.void a,
+.practice-billing .details ul li.void span {
+	text-decoration: line-through;
+}
+.practice-billing .details ul.documents li {
+	padding-left: 0;
+	list-style: none;
+	float: left;
+	width: 100%;
+}
+.practice-billing .details ul.documents a {
+	color: #333333;
+}
+.practice-billing .details .document-date {
+	color: #989898;
+}
+.practice-billing .list-inline > li{
+	padding-right: 40px;
+}
+.practice-billing .documents .document-date{
+	color: #989898;
+}
+.practice-billing .documents{
+	font-weight: 300;
+}
+.practice-billing .other-info .job-id {
+	text-decoration:none;
+	color: #333333;
+}
+.practice-billing .other-info .job-id:hover {
+	text-decoration: underline;
+}
+
+.practice-billing .no-jobs p:first-child {
+	padding: 30px 20px 30px 20px;
+}
+
+.practice-billing p.empty-message {
+	padding: 20px;
+}
+.practice-billing .listPages{
+	font-weight: 300;
+	font-size: 14px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.practice-billing .pager{
+	margin-bottom: 10px;
+}
+.practice-billing .filtering li {
+	color: #808080;
+	font-size: 20px;
+	font-weight: 200;
+	float: left;
+}
+.practice-billing .filtering{
+	margin-bottom: 35px;
+}
+.practice-billing .filtering a{
+	color: #808080;
+}
+.practice-billing .to_approve {
+	display: none;
+}
+.practice-billing.show_approval .to_approve{
+	display: block;
+}
+@media (max-width: 767px) {
+	.practice-billing .contentStart{
+		margin-top: 125px;
+	}
+
+	.practice-billing .filtering .btn-group {
+		width: 100%;
+		margin: 10px 0 10px 0;
+		float: left;
+	}
+
+	.practice-billing .filtering .btn {
+		width: 33.3333333%;
+		color: #BBBBBB;
+		text-decoration: none;
+		white-space: normal;
+	}
+	.practice-billing .filtering .btn.active {
+		color: #777777;
+		font-weight: bold;
+	}
+	.practice-billing .filtering .badgeToApprove { /* INVOICE BADGE POSITION */
+		background-color: #B94A48; /*RED TO SHOW THE MOST THAT THE USER NEED TO DO SOMETHING TO GET THE PAYMENT*/
+		position: absolute;
+		left: 48%;
+		top: -9px;
+		z-index: 10;
+	}
+	.practice-billing .filtering .badgeToPay { /* PAYMENT BADGE POSITION */
+		background-color: #3F74A5; /*BLUE TO SHOW THAT THE USER CAN GIVE A INFO ABOUT THE AWAITING PAYMENT*/
+		position: absolute;
+		right: 24%;
+		top: -9px;
+		z-index: 10;
+	}
+	.practice-billing.show_approval  .filtering .badgeToPay { /* PAYMENT BADGE POSITION */
+		background-color: #3F74A5; /*BLUE TO SHOW THAT THE USER CAN GIVE A INFO ABOUT THE AWAITING PAYMENT*/
+		position: absolute;
+		right: 16%;
+		top: -9px;
+		z-index: 10;
+	}
+	.practice-billing .filtering .container {
+		display:table;
+	}
+	.practice-billing .filtering .table-row {
+		display:table-row;
+	}
+	.practice-billing .filtering .col.to_approve {
+		display: none;
+	}
+	.practice-billing .filtering .col,
+	.practice-billing.show_approval  .filtering .col.to_approve {
+		display:table-cell;
+	}
+	.practice-billing .visible-xs .to_approve {
+		border-radius: 0;
+	}
+	.practice-billing.show_approval  .to_pay {
+		border-left: 0;
+	}
+	.practice-billing .to_pay {
+		border-radius: 0 4px 4px 0;
+	}
+	.practice-billing .byList {
+		border-radius: 4px 0 0 4px;
+		border-right: 0;
+	}
+
+	.practice-billing .job-container {
+		margin-bottom: 20px;
+	}
+	.practice-billing .panel-heading {
+		position: fixed;
+		top: 50px;
+		left: 0;
+		width: 100% !important;
+		z-index: 100;
+		text-align: center;
+	}
+	.practice-billing .fixPosition {
+		position: fixed;
+		top: 100px;
+		left: 0;
+		width: 100% !important;
+		z-index: 100;
+		background-color: white;
+		margin: 0;
+		border-bottom: solid #BBBBBB 1px;
+		box-shadow: 0px 5px 5px #BBBBBB;
+	}
+	.practice-billing .fixPositionPadding{
+		padding-left: 0;
+	}
+
+	.practice-billing .filtering .btn.active {
+		color: #777777;
+		font-weight: bold;
+	}
+
+	.practice-billing .job-container {
+		margin-bottom: 20px;
+	}
+
+	.practice-billing .date-container {
+		min-height: 200px;
+	}
+
+	.practice-billing .right-hand-side {
+		padding: 0;
+	}
+
+	.practice-billing .status_invoice_not_requested .date-container,
+	.practice-billing .status_invoice_requested .date-container,
+	.practice-billing .status_needs_approval .date-container {
+		border-top: 4px solid #D8A375;
+	}
+
+	.practice-billing .status_paid .date-container {
+		border-top: 4px solid #57BB5E;
+	}
+
+	.practice-billing .status_invoice_not_requested .right-hand-side,
+	.practice-billing .status_invoice_requested .right-hand-side,
+	.practice-billing .status_needs_approval .right-hand-side {
+	border-top: 15px solid #D8A375;
+	}
+
+	.practice-billing .status_paid .right-hand-side {
+		border-top: 15px solid #57BB5E;
+	}
+
+	.practice-billing .job-date {
+		border-left: 0;
+		text-align: center;
+	}
+
+	.practice-billing .day,
+	.practice-billing .job-month-year {
+		display: block;
+		width: 100%;
+	}
+
+	.practice-billing .status-container {
+		padding: 10px 0;
+	}
+
+	.practice-billing .status {
+		display: block;
+	}
+
+	.practice-billing .amount p {
+		line-height: 1.6;
+	}
+
+	.practice-billing .details ul.documents li {
+		margin-bottom: 10px;
+	}
+
+	.practice-billing .visible-xs.actions {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	.practice-billing .filtering {
+		padding: 20px;
+	}
+	.practice-billing .filtering li.active a {
+		color: #3e75a7;
+		font-weight: 400;
+	}
+	.practice-billing .filtering li a:hover{
+		color: #3e75a7;
+		text-decoration: none;
+	}
+	.practice-billing .filtering .badge{
+		vertical-align: middle;
+		margin-bottom: 4px;
+	}
+	.practice-billing .filtering li a {
+		color: #BBBBBB;
+	}
+	.practice-billing .filtering li.badgeColor .badge {
+		background-color: #B94A48; /*RED TO SHOW THE MOST THAT THE USER NEED TO DO SOMETHING TO GET THE PAYMENT*/
+	}
+	.practice-billing .right-hand-side {
+		padding: 0;
+	}
+
+	/*
+	 * These next 2 rules attempt to make the date part of the job row the same
+	 * height as the right hand side.
+	 * http://stackoverflow.com/a/19378956/691427
+	 */
+	.practice-billing .job-container {
+		display: table;
+		margin-bottom: 10px;
+		border: 1px solid #B2B2B2;
+		float: left;
+	}
+
+	.practice-billing .date-container,
+	.practice-billing .right-hand-side {
+		display: table-cell;
+		float: none;
+		vertical-align: top;
+	}
+
+	/*
+	 * These next 2 rules attempt to make the action part of the detail section the
+	 * same height as the details
+	 * http://stackoverflow.com/a/19378956/691427
+	 */
+	.practice-billing .detail-container {
+		display: table;
+		width: 100%;
+	}
+
+	.practice-billing .details,
+	.practice-billing .actions {
+		display: table-cell;
+		float: none;
+		vertical-align: top;
+	}
+
+	.practice-billing .date-container {
+		position: relative;
+		overflow: hidden;
+		min-height: 200px;
+		float: left;
+		width: 100%;
+	}
+
+	.practice-billing .job-date .year {
+		float: left;
+	}
+
+	.practice-billing .other-info {
+		position: absolute;
+		bottom: 15px;
+		left: 20px;
+		padding-right: 35px;
+		padding-left: 0;
+	}
+
+	.practice-billing .status_invoice_not_requested .status-container,
+	.practice-billing .status_invoice_requested .status-container,
+	.practice-billing .status_needs_approval .status-container {
+		border-bottom: 5px solid #D8A375;
+	}
+
+	.practice-billing .status_paid .status-container {
+		border-bottom: 5px solid #57BB5E;
+	}
+
+	.practice-billing .status-container {
+		padding: 20px 0 0 0;
+	}
+
+	.practice-billing .status {
+		margin-top: 30px;
+	}
+
+	.practice-billing .details ul.documents a {
+		color: #333333;
+	}
+}
+
+
+/*-------------------------------------------------------
+
+Part application thanks page
+
+-------------------------------------------------------*/
+.part-application-thanks .other-days {
+	padding: 0 20px 0 20px;
+	border: 2px solid #2373AA;
+	border-radius: 4px;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+.part-application-thanks .other-days .apply-for-all {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.part-application-thanks .btn-success.disabled {
+	opacity: 1;
+}
+
+
+/*-------------------------------------------------------
+
+Invite available locums page
+
+-------------------------------------------------------*/
+.invite-available-locums {
+	color: #676767;
+}
+
+.invite-available-locums .invite-all {
+	text-align: center;
+}
+
+.invite-available-locums .available-locums{
+	margin-top: 20px;
+}
+
+.invite-available-locums .table > thead > tr > th,
+.invite-available-locums .table > tbody > tr > th,
+.invite-available-locums .table > thead > tr > td,
+.invite-available-locums .table > tbody > tr > td {
+	vertical-align: middle;
+}
+
+.invite-available-locums .header-text [class^="icon-"],
+.invite-available-locums .header-text [class*=" icon-"] {
+	margin: 10px;
+}
+
+.invite-available-locums .available-locums .header-text {
+	margin-bottom: 10px;
+}
+
+.invite-available-locums .header-text [class^="icon-"],
+.invite-available-locums .header-text [class*=" icon-"] {
+	color: #256298;
+}
+
+
+.invite-available-locums .available-locums .table > thead > tr > th {
+	border: 1px solid #CDCDCD;
+	background-color: #F1F1F1;
+}
+
+.invite-available-locums .locum-info h3 {
+	margin: 0;
+}
+
+.invite-available-locums .rating {
+	color: #256298;
+}
+.invite-available-locums .rating:before {
+	color: #676767;;
+}
+
+.invite-available-locums .rating-title,
+.invite-available-locums .documents-title,
+.invite-available-locums .pension-title {
+	text-align: center;
+}
+
+.invite-available-locums .documents .icon-question-sign {
+	font-size: 14px;
+}
+
+.invite-available-locums .locum-image {
+	padding: 0;
+}
+
+.invite-available-locums .locum-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.invite-available-locums .locum-container .row {
+	margin-left: 0;
+}
+
+.invite-available-locums .previously-hired {
+	line-height: 14px;
+	font-size: 14px;
+	padding: 5px;
+	background-color: #cca711;
+	border-radius: 0;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: default;
+	border: 1px solid transparent;
+}
+
+.invite-available-locums .btn-invite,
+.invite-available-locums .locum-already-invited {
+	font-size: 18px;
+}
+
+.invite-available-locums .status-invited .btn-invite,
+.invite-available-locums .status-invited .ajax-error,
+.invite-available-locums .locum-already-invited {
+	display: none;
+}
+
+.invite-available-locums .status-invited .locum-already-invited {
+	display: block;
+}
+
+.invite-available-locums .locum-already-invited {
+	width: 100%;
+	padding: 6px 0 6px 0;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: default;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #fff;
+	background-color: #1FBBA5;
+	border-color: #46A293;
+}
+
+.invite-available-locums .btn-invite[data-url] .icon-spinner {
+	display: none;
+}
+
+.invite-available-locums .btn-invite[data-url].ajax-request-sent .icon-spinner {
+	display: inline;
+}
+
+.invite-available-locums .ajax-error{
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	padding: 5px;
+}
+
+.invite-available-locums .take-to-job-posting {
+	margin-bottom: 2em;
+}
+
+
+@media (max-width: 767px) {
+	.invite-available-locums .locum-info {
+		padding: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.invite-available-locums .locum-image {
+		text-align: center;
+	}
+
+	.invite-available-locums .rating,
+	.invite-available-locums .documents,
+	.invite-available-locums .pension {
+		font-size: 26px;
+		text-align: center;
+	}
+}
+
+/*-------------------------------------------------------
+
+Invite declined thanks page
+
+-------------------------------------------------------*/
+
+.invite-declined-thanks .panel-body h4{
+	margin-bottom: 5px;
+}
+
+.invite-declined-thanks .panel-body .glyphicon.check{
+	font-size: 3em;
+	float: left;
+	margin-right: 10px;
+	color: #3C763D;
+	margin-top: 6px;
+}
+
+.invite-declined-thanks .panel-body .text{
+	min-height: 50px;
+	margin-top: 1.1em;
+}
+
+.invite-declined-thanks .decline-thanks{
+	background-color: #D6E9C6;
+	padding: 1em;
+}
+
+.invite-declined-thanks .find-job{
+	margin-top: 1em;
+}
+
+
+/*-------------------------------------------------------
+
+ invite declined form
+
+-------------------------------------------------------*/
+.invite-declined-form .survey button {
+	border-color: #1482cc;
+	border-radius: 0;
+	color: #1482cc;
+	margin-bottom: 10px;
+	text-align: left;
+	padding-left: 15px;
+	white-space: normal;
+}
+
+.invite-declined-form .survey button:hover {
+	background-color: #1482cc;
+	color: #ffffff;
+}
+
+.invite-declined-form .survey form {
+	padding-bottom: 25px;
+}
+/*-------------------------------------------------------
+
+Locum document list
+
+-------------------------------------------------------*/
+.locum-document-list  h2:first-child {
+	margin-top: 0;
+}
+
+.locum-document-list .essential-documents {
+	margin-left: 50px;
+}
+
+.locum-document-list .th-actions {
+	width: 220px;
+}
+
+.locum-document-list .action-buttons .text {
+	text-align: center;
+	display: block;
+	margin: 10px 0 10px 0;
+}
+
+.locum-document-list .btn-delete {
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.locum-document-list .table {
+	word-break: break-all;
+}
+
+/*-------------------------------------------------------
+
+Locum upload document
+
+-------------------------------------------------------*/
+.locum-document-upload .content-container {
+	margin-top: 20px;
+}
+
+/*-------------------------------------------------------
+
+Change impersonation
+
+-------------------------------------------------------*/
+
+.change-impersonation .impersonation-box {
+	margin-top: 30px;
+	background-color: white;
+	min-height: 20px;
+	padding: 0 19px;
+	margin-bottom: 10px;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+	float: left;
+	padding: 30px;
+}
+
+.job-fill-staff .job-fill-locums table {
+	margin-bottom: 0px;
+}
+
+.job-fill-staff .favourite {
+	color: #C09853;
+}
+
+.job-fill-staff .borderless td {
+	border-top: 0 !important;
+	font-size: 14px;
+}
+.job-fill-staff h3 {
+	margin-left: 10px;
+}
+
+/*-------------------------------------------------------
+
+ Invite declined survey location preference page
+
+-------------------------------------------------------*/
+.invite-declined-location-preference .section-content {
+	background-color: #F5F5F5;
+	padding: 20px;
+}
+
+.invite-declined-location-preference .section-content h3 {
+	margin: 0 0 20px;
+}
+
+.invite-declined-location-preference .section-content .btn-update-preferences {
+	display: block;
+	margin-top: 10px;
+}
+
+.invite-declined-location-preference .section-content .interest-container {
+	margin-top: 10px;
+}
+
+.invite-declined-location-preference .section-content .help-block {
+	margin-bottom: 0;
+}
+
+.invite-declined-location-preference .section-content form span,
+.invite-declined-location-preference .section-content form div {
+	vertical-align: top;
+}
+
+.invite-declined-location-preference .section-content form span {
+	line-height: 2.5em;
+}
+
+.invite-declined-location-preference .section-content .work-within {
+	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+	.invite-declined-location-preference .section-content .form-group {
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.invite-declined-location-preference .section-content form .form-group {
+		margin: 0 10px 0 10px;
+	}
+}
+
+
+/*-------------------------------------------------------
+
+ Invite declined survey rate preference page
+
+-------------------------------------------------------*/
+.invite-declined-rate-preference .section-content {
+	background-color: #F5F5F5;
+	padding: 20px;
+}
+
+.invite-declined-rate-preference .section-content h3 {
+	margin: 0 0 20px;
+}
+
+.invite-declined-rate-preference .section-content .btn-update-preferences {
+	display: block;
+	margin-top: 10px;
+}
+
+.invite-declined-rate-preference .section-content .earn-at-least {
+	font-weight: bold;
+}
+
+.invite-declined-rate-preference .section-content .min_rate {
+	width: 3em;
+}
+
+.invite-declined-rate-preference .section-content form span,
+.invite-declined-rate-preference .section-content form div {
+	vertical-align: top;
+}
+
+.invite-declined-rate-preference .section-content form span {
+	line-height: 2.5em;
+}
+
+.invite-declined-location-preference .section-content .help-block {
+	margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+	.invite-declined-rate-preference .section-content .form-group {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+	.invite-declined-rate-preference .section-content .form-group.has-error {
+		display: block;
+	}
+	.invite-declined-rate-preference .section-content input {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 768px) {
+	.invite-declined-rate-preference .section-content form .form-group {
+		margin: 0 10px 0 0;
+	}
+	.invite-declined-rate-preference .section-content .help-block {
+		margin-left: 1em;
+	}
+}
+
+
+/*-------------------------------------------------------
+
+ Locum long term availability
+
+-------------------------------------------------------*/
+.locum-long-term-availability .panel-body {
+	padding-top: 0px;
+}
+
+.locum-long-term-availability .legend td {
+	padding: 7px;
+}
+.locum-long-term-availability .legend .available,
+.locum-long-term-availability .legend .booked {
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 20px;
+}
+.locum-long-term-availability .legend .available {
+	background-color: #21b8a9;
+}
+.locum-long-term-availability .legend .booked {
+	background-color: #1482cd;
+}
+
+.locum-long-term-availability .availability-table td {
+	font-size: 12px;
+	border-left: 0;
+	border-bottom: 0;
+	border-top: 0;
+}
+.locum-long-term-availability .availability-table td:nth-child(1) {
+	border-left: 0;
+}
+.locum-long-term-availability .availability-table td:last-child {
+	border-right: 0;
+}
+.locum-long-term-availability .availability-table tr:last-child td {
+	border-bottom: 1px solid #DDDDDD;
+}
+.locum-long-term-availability .month-header-row td:nth-child(1) {
+	border-right: 0;
+}
+.locum-long-term-availability .am .header {
+	border-bottom: 1px solid #dddddd;
+}
+.locum-long-term-availability .availability-table .status-booked,
+.locum-long-term-availability .availability-table .status-booked.weekend,
+.locum-long-term-availability .availability-table .status-available,
+.locum-long-term-availability .availability-table .status-available.weekend {
+	border: 1px solid white;
+}
+.locum-long-term-availability .availability-table .am .status-not-available {
+	border-right: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+.locum-long-term-availability .availability-table .pm .status-not-available {
+	border-right: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+}
+
+.locum-long-term-availability .days-header-row td {
+	text-align: left;
+	font-weight: 600;
+	color: #666666;
+	border-right: 0;
+	border-top: 1px solid #DDDDDD;
+}
+.locum-long-term-availability .month-header-row td {
+	text-align: left;
+	font-weight: 600;
+	color: #666666;
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+.locum-long-term-availability .date-header-row {
+	background-color: #eeeeee;
+}
+.locum-long-term-availability .date-header-row .all {
+	text-align: center;
+	width: 9%;
+}
+.locum-long-term-availability .am .header,
+.locum-long-term-availability .pm .header {
+	text-align: center;
+	padding: 0;
+}
+.locum-long-term-availability .date-header-row .date {
+	text-align: right;
+	font-weight: 600;
+	padding: 0;
+	width: 13%;
+	border-right: 0;
+}
+
+.locum-long-term-availability .all {
+	padding: 0;
+}
+.locum-long-term-availability .add-all,
+.locum-long-term-availability .remove-all,
+.locum-long-term-availability .add-all-day,
+.locum-long-term-availability .remove-all-day {
+	display: none;
+}
+.locum-long-term-availability .show-add-all-day .add-all-day,
+.locum-long-term-availability .show-remove-all-day .remove-all-day {
+	display: block;
+}
+.locum-long-term-availability .availability-table .am td:nth-child(2),
+.locum-long-term-availability .availability-table .pm td:nth-child(2) {
+	border-left: 0;
+}
+.locum-long-term-availability .show-add-all .add-all,
+.locum-long-term-availability .show-remove-all .remove-all {
+	display: block;
+}
+.locum-long-term-availability .add-all,
+.locum-long-term-availability .remove-all {
+	padding: 3px;
+}
+.locum-long-term-availability .add-all:hover,
+.locum-long-term-availability .remove-all:hover {
+	border: 3px #cca614 solid;
+	line-height: 26px;
+	padding: 0;
+}
+.locum-long-term-availability .add-all-day,
+.locum-long-term-availability .remove-all-day {
+	padding: 3px 10px 0 0;
+	text-decoration: none;
+	color: #333333;
+}
+.locum-long-term-availability .availability-table a.add-all,
+.locum-long-term-availability .availability-table a.remove-all,
+.locum-long-term-availability .availability-table a.add-all-day,
+.locum-long-term-availability .availability-table a.remove-all-day {
+	line-height: 20px;
+}
+.locum-long-term-availability .availability-table a.add-all-day:hover,
+.locum-long-term-availability .availability-table a.remove-all-day:hover {
+	border: 3px #cca614 solid;
+	line-height: 19px;
+	padding: 0px 7px 0 0;
+}
+
+.locum-long-term-availability .add-all-am,
+.locum-long-term-availability .add-all-pm,
+.locum-long-term-availability .remove-all-am,
+.locum-long-term-availability .remove-all-pm {
+	display: none;
+	line-height: 50px;
+	border-right: 1px solid #dddddd;
+}
+.locum-long-term-availability .show-add-all .add-all-am,
+.locum-long-term-availability .show-add-all .add-all-pm,
+.locum-long-term-availability .show-remove-all .remove-all-am,
+.locum-long-term-availability .show-remove-all .remove-all-pm {
+	display: block;
+}
+.locum-long-term-availability .header a {
+	text-decoration: none;
+	color: #B2B2B2;
+}
+.locum-long-term-availability .add-all-am:hover,
+.locum-long-term-availability .add-all-pm:hover,
+.locum-long-term-availability .remove-all-am:hover,
+.locum-long-term-availability .remove-all-pm:hover {
+	border: 3px #cca614 solid;
+	line-height: 38px;
+	padding: 3px 0 3px 0;
+}
+
+.locum-long-term-availability .availability-table .icon-plus,
+.locum-long-term-availability .availability-table .remove-availability,
+.locum-long-term-availability .availability-table .add-availability {
+	display: none;
+}
+.locum-long-term-availability .status-booked .icon-plus,
+.locum-long-term-availability .status-available .remove-availability,
+.locum-long-term-availability .status-not-available .add-availability {
+	display: block;
+}
+.locum-long-term-availability .availability-table .status-booked,
+.locum-long-term-availability .availability-table .status-available,
+.locum-long-term-availability .availability-table .status-not-available {
+	text-align: center;
+	font-size: 20px;
+}
+
+.locum-long-term-availability .availability-table .status-booked,
+.locum-long-term-availability .availability-table .status-booked.weekend {
+	background-color: #1482cd;
+	color: #ffffff;
+}
+.locum-long-term-availability .availability-table .status-available,
+.locum-long-term-availability .availability-table .status-available.weekend {
+	background-color: #21b8a9;
+}
+.locum-long-term-availability .status-available a {
+	color: white;
+}
+.locum-long-term-availability .status-not-available a.add-availability {
+	color: #1482cd;
+}
+.locum-long-term-availability .status-available a,
+.locum-long-term-availability .status-not-available a {
+	text-decoration: none;
+	height: 100%;
+	line-height: 30px
+}
+.locum-long-term-availability .status-not-available,
+.locum-long-term-availability .status-available,
+.locum-long-term-availability .status-booked {
+	padding: 0;
+}
+.locum-long-term-availability .status-not-available a.add-availability:hover,
+.locum-long-term-availability .status-available a:hover,
+.locum-long-term-availability .availability-day-highlight a:hover {
+	border: 3px #cca614 solid;
+	height: 50px;
+	line-height: 44px;
+}
+.locum-long-term-availability .availability-table .icon-plus,
+.locum-long-term-availability .availability-table .remove-availability,
+.locum-long-term-availability .availability-table .add-availability {
+	line-height: 50px;
+}
+.locum-long-term-availability .availability-table a:hover {
+	text-decoration: none;
+}
+
+.locum-long-term-availability .ajax-error {
+	color: #A94442;
+	background-color: #F2DEDE;
+	border-color: #EBCCD1;
+	padding: 15px;
+	margin: 5px;
+	border-radius: 4px;
+}
+.locum-long-term-availability .ajax-error p {
+	margin: 0;
+}
+
+.locum-long-term-availability .help-text-popover-content p {
+	/* Restore font-size from body */
+	font-size: 14px;
+}
+.locum-long-term-availability .help-text-popover-content a {
+	/* Restore line-height from .btn-sm */
+	line-height: 1.5em;
+}
+
+@media (max-width: 767px) {
+	.locum-long-term-availability .panel-body {
+		padding-right: 0px;
+	}
+}
+@media (min-width: 768px) {
+	.locum-long-term-availability .date-header-row .all {
+		width: 4.5%;
+	}
+	.locum-long-term-availability .date-header-row .date {
+		width: 13.5%;
+	}
+}
+
+
+/*-------------------------------------------------------
+
+LOCUM PROFILE PRIVATE
+
+-------------------------------------------------------*/
+.locum-profile-private .profileLeft{
+	margin-left: -15px;
+	padding-left: 0;
+}
+/*.locum-profile-private .plImage{*/
+	/*padding-left: 0;*/
+	/*padding-right: 0;*/
+	/*width: 100px;*/
+	/*margin-right: 15px;*/
+	/*margin-bottom: 15px;*/
+	/*text-align: center;*/
+/*}*/
+.locum-profile-private .plDocs h3, .locum-profile-private .plGovNotes h3{
+	font-weight: bold;
+	margin-top: 35px;
+}
+.locum-profile-private .plDocItems{
+	list-style-type: none;
+	display: block;
+}
+.locum-profile-private .plDocItems li{
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.locum-profile-private .plGovNotes{
+	padding-left: 0;
+}
+.locum-profile-private .profileRight li{
+	list-style-type: none;
+}
+.locum-profile-private .profileRight h4{
+	font-weight: bold;
+	font-size: 15px;
+}
+.locum-profile-private .profileRight h4:not(:first-child){
+	margin-top: 35px;
+}
+.locum-profile-private .persDetails{
+	font-size: 14px;
+}
+.locum-profile-private .persDetails span{
+	font-weight: 300;
+	margin-right: 10px;
+	color: #777777;
+}
+.locum-profile-private blockquote{
+	font-size: 15px;
+}
+.locum-profile-private .btnGroup{;
+	margin-top: 0;
+	padding: 0;
+}
+.locum-profile-private .thumbnailGroup{
+	background-color: white;
+	width: 120px;
+	padding: 0;
+}
+
+.locum-profile-private .locumAvailability{
+	padding-bottom: 10px;
+}
+.locum-profile-private .locumDocuments{
+	padding-bottom: 10px;
+}
+.locum-profile-private .btnGroup a{
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+.locum-profile-private .img-user-config{
+	background-color: white;
+	height: 120px;
+	text-align: center;
+}
+.locum-profile-private .locumDescriptionBox{
+	margin-top: -120px;
+	margin-left: 120px;
+	padding-left: 10px;
+
+}
+.locum-profile-private .locumDescription{
+	padding-right: 0;
+}
+.locum-profile-private .breadcrumb li{
+	display:inline;
+}
+.locum-profile-private .list-unstyled a:hover{
+	text-decoration: none;
+}
+.locum-profile-private .modal-header {
+	background-color: #f1f1f1;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom: 1px solid #cccccc;
+	padding: 15px;
+}
+.locum-profile-private .modal-header h4 {
+	margin: 0;
+}
+.locum-profile-private .modal-header a {
+	cursor: pointer;
+}
+/* locum availability calendar */
+
+@media(max-width: 530px){
+    .locum-profile-private .widget-container{
+     display: none;
+    }
+}
+
+.locum-profile-private .widget-container{
+    min-height: 180px;
+}
+
+.locum-profile-private .availability-table td {
+	border: 1px solid #dddddd;
+}
+.locum-profile-private .availability-table tr td {
+	border-top: 0;
+}
+.locum-profile-private .availability-table tr:last-child td {
+	border-bottom: 0;
+}
+.locum-profile-private .availability-table tr td:first-child {
+	border-left: 0;
+}
+.locum-profile-private .availability-table tr td:last-child {
+	border-right: 0;
+}
+.locum-profile-private .locum-availability-calendar td {
+	width: 6.6%;
+}
+.locum-profile-private .status-filled .icon-plus,
+.locum-profile-private .status-available .remove-availability,
+.locum-profile-private .status-not-available .add-availability {
+	display: block;
+}
+.locum-profile-private .status-filled .add-availability,
+.locum-profile-private .status-filled .remove-availability,
+.locum-profile-private .status-available .add-availability,
+.locum-profile-private .status-available .icon-plus,
+.locum-profile-private .status-not-available .remove-availability,
+.locum-profile-private .status-not-available .icon-plus {
+	display: none;
+}
+.locum-profile-private .show-add-all .add-all-am,
+.locum-profile-private .show-remove-all .remove-all-am,
+.locum-profile-private .show-add-all .add-all-pm,
+.locum-profile-private .show-remove-all .remove-all-pm,
+.locum-profile-private .show-add-day .add-all-day,
+.locum-profile-private .show-remove-day .remove-all-day {
+	display: block;
+}
+.locum-profile-private .show-add-all .remove-all-am,
+.locum-profile-private .show-remove-all .add-all-am,
+.locum-profile-private .show-add-all .remove-all-pm,
+.locum-profile-private .show-remove-all .add-all-pm,
+.locum-profile-private .show-add-day .remove-all-day,
+.locum-profile-private .show-remove-day .add-all-day {
+	display: none;
+}
+.locum-profile-private .days-row a.add-all-day{
+    line-height: 15px;
+}
+.locum-profile-private .days-row a.add-all-day:hover{
+    line-height: 15px;
+    height: auto;
+}
+.locum-profile-private .status-filled,
+.locum-profile-private .status-available,
+.locum-profile-private .status-not-available {
+	text-align: center;
+	font-size: 20px;
+}
+.locum-profile-private .status-filled {
+	background-color: #1482cd;
+	color: #ffffff;
+}
+.locum-profile-private .status-filled i {
+	margin-top: 5px;
+}
+.locum-profile-private .status-available a {
+	background-color: #21b8a9;
+	color: #ffffff;
+}
+.locum-profile-private .status-not-available a {
+	background-color: #eeeeee;
+	color: #cbcbcb;
+}
+.locum-profile-private .status-available a,
+.locum-profile-private .status-not-available a {
+	text-decoration: none;
+	height: 100%;
+	line-height: 30px
+}
+.locum-profile-private .status-not-available,
+.locum-profile-private .status-available,
+.locum-profile-private .status-filled {
+	padding: 0;
+}
+.locum-profile-private .status-not-available a:hover,
+.locum-profile-private .status-available a:hover,
+.locum-profile-private .availability-day-highlight a:hover {
+	border: 3px #cca614 solid;
+	height: 30px;
+	line-height: 23px;
+}
+.locum-profile-private .availability-day-highlight {
+	padding: 0;
+}
+.locum-profile-private .availability-day-highlight a {
+	text-align: center;
+	color: #333333;
+	background-color: #eeeeee;
+	display: block;
+	line-height: 30px;
+}
+.locum-profile-private .availability-day-highlight a:hover {
+	text-decoration: none;
+	color: #333333;
+}
+.locum-profile-private .days-row td {
+	text-align: center;
+}
+.locum-profile-private .days-row a {
+	line-height: 20px;
+	height: 45px;
+	padding: 7px 3px 3px 3px;
+}
+.locum-profile-private .days-row a:hover {
+	line-height: 20px;
+	height: 43px;
+	padding: 4px 0 3px 0;
+}
+
+.locum-profile-private .locum-availability-calendar a i{
+    text-decoration: none;
+}
+
+.locum-profile-private .ajax-error {
+	color: #a94442;
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	padding: 15px;
+	margin-bottom: 5px;
+	border-radius: 4px;
+}
+.locum-profile-private .ajax-error p {
+	margin: 0;
+}
+
+/*-------------------------------------------------------
+
+ Locum private feedback page
+
+-------------------------------------------------------*/
+
+.locum-private-feedback .job-header {
+	width: 20%;
+}
+
+.locum-private-feedback .question {
+	font-weight: 600;
+}
+
+.locum-private-feedback .star-rating {
+	margin-bottom: 10px;
+}
+
+.locum-private-feedback blockquote {
+	font-size: 14px;
+	border-left: 5px solid #EFEFEF;
+}
+
+.locum-private-feedback .panel-body .icon-star {
+	font-size: 1.5em;
+	color: #FFD954;
+	text-shadow: 0 0 1px #444;
+	margin-right: 3px;
+
+}
+
